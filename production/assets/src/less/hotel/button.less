@@ -1,0 +1,70 @@
+.rq-btn-primary {
+  background: @rq-primary-color;
+  color: @rq-bg-light;
+  padding: @rq-padding-small @rq-padding-base * 2;
+  .border-radius(2px);
+  &.rounded {
+    .border-radius(2px);
+  }
+
+  &.small-padding {
+    padding-top: @rq-padding-small - 3;
+    padding-bottom: @rq-padding-small - 3;
+  }
+  &.lr-big-padding {
+    padding-left: @rq-padding-large * 2;
+    padding-right: @rq-padding-large * 2;;
+  }
+  &.capitalized {
+    text-transform: capitalize;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: darken(@rq-primary-color, 10%);
+    color: @rq-bg-body;
+  }
+}
+.rq-full-width {
+  width: 100%;
+}
+
+
+.rq-btn-gray {
+  background: @rq-date-color;
+  color: @rq-alt-button-text;
+  padding: @rq-padding-small @rq-padding-base + 5;
+  &.rounded {
+    .border-radius(2px);
+  }
+  &.small-padding {
+    padding-top: @rq-padding-small - 3;
+    padding-bottom: @rq-padding-small - 3;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: darken(@rq-date-color, 10%);
+    color: @rq-bg-body;
+  }
+}
+.rq-full-width {
+  width: 100%;
+}
+
+
+
+.applyBtn  {
+  border-radius: 2px;
+  border: 0;
+  color: @rq-text-color-white;
+}
+.cancelBtn  {
+  border: 1px solid @rq-date-color;
+  background: transparent;
+  border-radius: 2px;
+  padding-bottom: 2px;
+  display:none;
+}

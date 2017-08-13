@@ -1,0 +1,23 @@
+.rq-user-listing {
+  .Relative(auto);
+  padding-bottom: @rq-padding-large * 3;
+  .rq-pagination {
+    margin-top: @rq-margin-large * 2;
+  }
+}
+.rq-user-content {
+  font-style: italic;
+  margin: @rq-padding-small 0 @rq-margin-base * 4;
+  p {
+    color: @rq-text-color-dark;
+    -webkit-font-smoothing: auto;
+  }
+}
+
+.rq-user-listing-section {
+  position: relative;
+  .rq-user-listing-single:last-child {
+      border-bottom-color: transparent;
+  }
+}
+

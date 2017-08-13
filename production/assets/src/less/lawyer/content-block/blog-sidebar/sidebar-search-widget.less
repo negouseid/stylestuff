@@ -1,0 +1,34 @@
+.widget {
+  input {
+    width: 100%;
+    padding: @rq-padding-small @rq-padding-base;
+    border: 0;
+    outline: 0;
+    background: @rq-blog-hover;
+    color: @rq-text-color-dark;
+
+    &::-webkit-input-placeholder {
+      color: @rq-text-color-base;
+      font-style: italic;
+      font-size: @rq-font-size-base - 1;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: @rq-text-color-base;
+      font-style: italic;
+      font-size: @rq-font-size-base - 1;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+      color: @rq-text-color-base;
+      font-style: italic;
+      font-size: @rq-font-size-base - 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: @rq-text-color-base;
+      font-style: italic;
+      font-size: @rq-font-size-base - 1;
+    }
+  }
+}

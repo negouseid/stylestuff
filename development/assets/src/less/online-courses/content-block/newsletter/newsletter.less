@@ -1,0 +1,33 @@
+.newsletter-content {
+  .Relative(auto);
+
+}
+
+.rq-newsletter-form {
+  position: relative;
+  margin-top: @rq-margin-base;
+  input {
+    width: 100%;
+    height: @rq-padding-base * 4 - 5;
+    background: @rq-bg-body;
+    .border(transparent);
+    padding: @rq-padding-small + 3 @rq-padding-large * 5 + 6 @rq-padding-small @rq-padding-large;
+    outline: 0;
+    border-radius: 2px;
+    .transition(.3s);
+    color: @rq-text-color-dark;
+    &:focus,
+    &:active {
+      border-color: @rq-text-color-light-dark;
+    }
+  }
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

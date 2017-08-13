@@ -1,0 +1,97 @@
+.rq-testimonial-content {
+  .Relative(auto);
+  z-index: 30;
+  .text-center;
+  li {
+      .author-name-title {
+      display: block;
+      margin-top: @rq-margin-large * 1.5;
+      line-height: @rq-line-height-base - 4;
+      a {
+        display: block;
+        font-style: normal;
+        .text-uppercase;
+        font-family: @rq-font-family-secondary;
+        color: @rq-text-color-white;
+        font-size: @rq-font-size-base + 4;
+        margin-bottom: @rq-margin-small;
+      }
+      cite {
+        font-style: normal;
+        font-size: @rq-font-size-base + 2;
+        color: @rq-testimonial-color;
+
+      }
+    }
+  }
+  .author-control-section {
+    .Relative(auto);
+    max-width: 381px;
+    margin: @rq-margin-large + 10 auto 0;
+    padding-left: @rq-padding-base;
+    padding-right: @rq-padding-base;
+    .author-img-list {
+      li {
+        position: relative;
+        .border-radius(50%);
+        margin-left: @rq-margin-small;
+        margin-right: @rq-margin-small;
+        &.flex-active-slide {
+          img {
+            border: 4px solid rgba(255,255,255, .3);
+          }
+        }
+      }
+      .author-img {
+        display: block;
+        height: 75px;
+        width: 75px;
+        .border-radius(50%);
+        cursor: pointer;
+        border: 4px solid transparent;
+        .transition(.3s);
+        @media(max-width:  @screen-sm) {
+          width: 55px;
+          height: 55px;
+        }
+        &:hover {
+          border: 4px solid rgba(255,255,255, .3);
+        }
+      }
+    }
+  }
+  .flexslider .flex-direction-nav a,
+  .flexslider .flex-direction-nav a {
+    display: block; /* I added this line */
+  }
+
+  .flex-direction-nav .flex-next:before {
+    content: "\f125";
+    font-family: "Ionicons";
+    display: inline-block;
+    color: #fff;
+    padding: 11px 0 10px;
+    font-size: 24px;
+    right: 0;
+  }
+
+  .flex-direction-nav .flex-prev:before {
+    content: "\f124";
+    font-family: "Ionicons";
+    display: inline-block;
+    color: #fff;
+    padding: 11px 0 10px;
+    font-size: 24px;
+  }
+
+  .flexslider .flex-next, .flexslider .flex-prev { opacity: 1; outline: 0; }
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+  right: 0;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+  left: 0;
+}
+

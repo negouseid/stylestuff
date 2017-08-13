@@ -1,0 +1,39 @@
+
+.rq-hotel-slider {
+  position: relative;
+  .item {
+    padding-bottom: 60px;
+  }
+  .owl-dots {
+    display: none !important;
+  }
+
+  .top-hotel .owl-prev, .top-hotel .owl-next {
+    display: inline-block;
+    font-family: "Ionicons";
+    font-size: 45px;
+    position: absolute;
+    top: 0;
+    padding-top: @rq-padding-small * 9;
+    background: fade(@rq-text-color-white, 80%);
+    line-height: 1;
+    min-height: 465px;
+    color: @rq-text-color-light-dark;
+
+    line-height: 40px;
+    text-align: center;
+    .transition(.3s);
+    &:hover {
+      color: @rq-text-color-dark;
+    }
+  }
+  .top-hotel .owl-prev {
+    left: 0;
+  }
+  .top-hotel .owl-next {
+    right: 0;
+  }
+
+}
+
+

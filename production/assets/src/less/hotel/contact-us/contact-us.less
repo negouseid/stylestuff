@@ -1,0 +1,37 @@
+.rq-contact-us {
+  .Relative(auto);
+  .col-md-6,
+  .col-sm-6 {
+    padding: 0;
+  }
+}
+
+.rq-contac-us-text {
+  .Relative( auto);
+  textarea {
+    resize: none;
+  }
+  padding: @rq-padding-large * 4 @rq-padding-large * 2 @rq-padding-large * 2 @rq-padding-large * 2;
+  @media(max-width: @screen-sm) {
+    padding: @rq-padding-large;
+  }
+  .comment-respond {
+    padding-top: @rq-padding-large * 2;
+    h4 {
+      .text-uppercase;
+    }
+  }
+}
+
+.rq-contact-us-map {
+  .Relative(auto);
+  @media(max-width: @screen-md) {
+    height: 500px;
+  }
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+

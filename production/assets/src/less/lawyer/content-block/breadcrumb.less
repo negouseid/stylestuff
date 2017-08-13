@@ -1,0 +1,25 @@
+.rq-subtitle {
+  &.breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+
+    a {
+      font-family: @rq-font-family-primary;
+      color: @rq-text-color-light-dark;
+      &:hover {
+        color: @rq-text-color-dark;
+      }
+    }
+    li {
+      &.active {
+        color: @rq-text-color-dark;
+      }
+      &:last-child {
+        &:before {
+          _opacity: 0;
+        }
+      }
+    }
+  }
+}

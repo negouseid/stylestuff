@@ -1,0 +1,55 @@
+.page-404-content {
+  position: relative;
+  z-index: 30;
+  width: 100%;
+  h2 {
+    font-size: @rq-padding-large * 6;
+    color: @rq-text-color-white;
+    line-height: @rq-padding-large * 6;
+    margin: 0;
+  }
+  h5 {
+    color: @rq-text-color-white;
+    font-size: @rq-padding-base * 2;
+    font-family: @rq-font-family-secondary;
+    .text-uppercase;
+  }
+  p {
+    a {
+      font-family: @rq-font-family-primary;
+      color: @rq-primary-color;
+    }
+  }
+  form {
+    position: relative;
+    width: 370px;
+    margin: 0 auto;
+    margin-top: @rq-margin-base * 2;
+
+    @media(max-width:  @screen-sm) {
+      width: 100%
+    }
+    
+    input {
+      width: 100%;
+      border: 0;
+      padding: @rq-padding-base - 3 @rq-padding-base + 5;
+      outline: 0;
+      color: @rq-text-color-dark;
+      &:focus,
+      &:active {
+        background-color: @rq-bg-light;
+      }
+    }
+    button {
+      position: absolute;
+      right: 5px;
+      top: 6px;
+      background-color: transparent;
+      color: @rq-text-color-dark;
+      i {
+        font-size: @rq-font-size-base;
+      }
+    }
+  }
+}

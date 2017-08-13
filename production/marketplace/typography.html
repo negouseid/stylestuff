@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scholar Marketplace</title>
+    <!-- Main style -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/dist/css/marketplace.style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+  </head>
+  <body> 
+    <div id="rq-page-loading" >
+      <div class="rq-loading-icon"><i class="ion-load-c"></i></div> 
+
+    </div>
+    <div id="main-wrapper">
+      <header class="header home-header">
+        <!-- <div class="header-overlay"></div> -->
+       <!--  <div class="headroom-sticky home-page-menu"> -->
+          <div class="rq-header-location">
+            <div class="top-bar">  
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <a class="navbar-brand" href="index.html"><img src="../assets/dist/img/marketplace/logo.png" alt=""/></a>  
+                  </div><!-- /.col-sm-3 -->
+                  <div class="col-sm-6">
+                    <div class="advanced-search">
+                      <div class="rq-search-single">
+                        <div class="rq-search-content">
+                          <select name="categories" class="category-option">
+                            <option value="0">All Categories</option>
+                            <option value="1">Category one</option>
+                            <option value="2">Category two</option>
+                            <option value="3">Category three</option>
+                            <option value="4">Category four</option>
+                            <option value="5">Category five</option>
+                          </select>
+                          <input type="text" class="rq-search-input" placeholder="I’m shopping for..." />
+                          <button type="submit" class="rq-search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div><!-- /.rq-search-content -->
+                      </div><!-- /.rq-search-single -->
+                    </div><!-- /.advanced-search -->
+                  </div><!-- /.col-sm-6 -->
+                  <div class="col-sm-3">
+                    <div class="rq-register">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Register</a></li>
+                        <li>/</li>
+                        <li><a href="#">Sign in</a></li>
+                        <li class="rq-cart rq-shopping-cart-inner">
+                          <a href="#" class="rq-shopping-cart-items-list">     
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            <span><small>2</small></span>
+                          </a>
+                          <div class="rq-shopping-cart-inner-div">
+                            <h4>Items Recently added</h4>
+                            <ul>
+                              <li>
+                                <div class="wrapper">
+                                  <a href="#" class="wrapper-img"> <img src="../assets/dist/img/marketplace/shopping-cart/1.jpg" alt="1"/> </a>
+                                  <a href="#" class="product-title">White Beard T-Shirt</a>
+                                  <p>1 x <small> $49.00</small></p>
+                                  <a href="#" class="subtraction"><i class="ion-ios-close-empty"></i></a>
+                                </div><!-- /.wrapper -->
+                              </li>
+                               <li>
+                                <div class="wrapper">
+                                  <a href="#" class="wrapper-img"> <img src="../assets/dist/img/marketplace/shopping-cart/2.jpg" alt="1"/> </a>
+                                  <a href="#" class="product-title">Mercedes Ben C-Class</a>
+                                  <p>1 x <small> $65.00</small></p>
+                                  <a href="#" class="subtraction"><i class="ion-ios-close-empty"></i></a>
+                                </div><!-- /.wrapper -->
+                              </li>
+                            </ul>
+                            <div class="subtotal">
+                              <strong>Subtotal:</strong>
+                              <strong>$114.00</strong>
+                            </div><!-- /.subtotal -->
+                            <div class="view-cart">
+                              <a href="shopping-cart.html">View Cart</a>
+                              <a href="checkout.html">Checkout</a>
+                            </div><!-- /.subtotal -->
+                          </div><!-- /.rq-shopping-cart-inner-div -->
+                        </li>
+                      </ul>
+                    </div><!-- /.rq-register -->
+                  </div><!-- /.col-sm-3 -->
+                </div><!-- /.row -->    
+              </div><!-- /.container -->
+            </div><!-- /.top-bar -->  
+          </div><!-- /.rq-header-location -->
+          <div class="main-nav" id="stickynav">
+            <div class="rq-inner-sks">
+            <div class="rq-custom-logo">
+              <a href="index.html"><img class="footer-logo" src="../assets/dist/img/marketplace/logo2.png" alt="" /></a>
+            </div><!-- /.rq-custom-logo -->
+            <div class="container"> 
+              <div class="row">
+                <div class="col-sm-3 rq-custom-3">
+                  <div class="categori-menu">
+                    <p class=""><span>Categories</span><i class="fa fa-bars" aria-hidden="true"></i></p>
+                    <ul class="categori-unorder">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tv & Video <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu rq-dropdown">
+                          <li class="mega-list">
+                            <img src="../assets/dist/img/marketplace/bg/rq-bg.jpg" alt="1">
+                            <div class="row">
+                              <div class="col-sm-4 rq-mega">
+                                <h3>Our Devices</h3>
+                                <p><a href="#">Devices 1</a></p>
+                                <p><a href="#">Devices 2</a></p>
+                                <p><a href="#">Devices 3</a></p>
+                                <p><a href="#">Devices 4</a></p>
+                                <p><a href="#">Devices 5</a></p>
+                                <p><a href="#">Devices 6</a></p>
+                                <p><a href="#">Devices 7</a></p>
+                                <p><a href="#">Devices 8</a></p>
+                                <p><a href="#">Devices 9</a></p>
+                                <p><a href="#">Devices 10</a></p>
+                                <p><a href="#">Devices 11</a></p>
+                                <p><a href="#">Devices 12</a></p>
+                                <p><a href="#">Devices 13</a></p>
+                                <p><a href="#">Devices 14</a></p>
+                                <p><a href="#">Devices 15</a></p>
+                                <p><a href="#">Devices 16</a></p>
+                              </div><!-- /.col-sm-6 -->
+                              <div class="col-sm-4 rq-mega">
+                                <h3>Our Devices</h3>
+                                <p><a href="#">Devices 1</a></p>
+                                <p><a href="#">Devices 2</a></p>
+                                <p><a href="#">Devices 3</a></p>
+                                <p><a href="#">Devices 4</a></p>
+                                <p><a href="#">Devices 5</a></p>
+                                <p><a href="#">Devices 6</a></p>
+                                <p><a href="#">Devices 7</a></p>
+                                <p><a href="#">Devices 8</a></p>
+                                <p><a href="#">Devices 9</a></p>
+                                <p><a href="#">Devices 10</a></p>
+                              </div><!-- /.col-sm-6 -->
+                              <div class="col-sm-4 rq-mega">
+                                <h3>Our Devices</h3>
+                                <p><a href="#">Devices 1</a></p>
+                                <p><a href="#">Devices 2</a></p>
+                              </div><!-- /.col-sm-6 -->
+                            </div><!-- /.row -->
+                          </li><!-- /.mega-list -->
+                        </ul><!-- /.dropdown-menu -->
+                      </li><!-- /.dropdown -->
+                      <li><a href="#">Home Audio & Theater</a></li>
+                      <li><a href="#">Camera, Photo & Video</a></li>
+                      <li><a href="#">Cell Phones & Accessories</a></li>
+                      <li><a href="#">Headphones</a></li>
+                      <li><a href="#">Video Games</a></li>
+                      <li><a href="#">Bluetooth & Wireless Speaker</a></li>
+                      <li><a href="#">Car Electronics</a></li>
+                      <li><a href="#">Musical Instruments</a></li>
+                      <li><a href="#">Electronics Accessories</a></li>
+                      <li><a href="#">Computers & Accessories</a></li>
+                    </ul><!-- /.categori-unorder -->
+                  </div><!-- /.categori-menu -->
+                </div><!-- /.col-sm-3 -->
+                <div class="col-sm-9 rq-custom-9">
+                  <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html" >Home</a></li>
+                        <li class="dropdown rq-dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Listing <span class="ion-chevron-down"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="categories.html">Listing Adsense</a></li>
+                            <li><a href="product-example.html">Listing Details</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown rq-dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Blog <span class="ion-chevron-down"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="blog-grid.html">Blog Grid</a></li>
+                            <li><a href="blog-list-thumb.html">Blog List Thumb</a></li>
+                            <li><a href="blog-listing.html">Blog Listing</a></li>
+                            <li><a href="post-image-single.html">Single Image Post</a></li>
+                            <li><a href="post-gallery-single.html">Single Gallery Post</a></li>
+                            <li><a href="post-video-single.html">Single Video Post</a></li>
+                            <li><a href="post-audio-single.html">Single audio Post</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown rq-dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Agents <span class="ion-chevron-down"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="member.html">Users</a></li>
+                            <li><a href="member-profile.html">User Profile</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown rq-dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Page <span class="ion-chevron-down"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="pricing-plan.html">Plan &amp; Pricing</a></li>
+                            <li><a href="coming-soon.html">Coming Soon </a></li>
+                            <li><a href="page-404.html">404 page</a></li>
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="elements.html">Common elements</a></li>
+                          </ul>
+                        </li>
+                        
+                         <li class="dropdown rq-seller not-show rq-shopping-cart-inner">
+                          <a href="#" class="dropdown-toggle rq-shopping-cart-items-list"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Cart:  Items(2)  -  <span>$75.00</span></a>
+                          <div class="rq-shopping-cart-inner-div">
+                            <h4>Items Recently added</h4>
+                            <ul>
+                              <li>
+                                <div class="wrapper">
+                                  <a href="#" class="wrapper-img"> <img src="../assets/dist/img/marketplace/shopping-cart/1.jpg" alt="1"/> </a>
+                                  <a href="#" class="product-title">White Beard T-Shirt</a>
+                                  <p>1 x <small> $49.00</small></p>
+                                  <a href="#" class="subtraction"><i class="ion-ios-close-empty"></i></a>
+                                </div><!-- /.wrapper -->
+                              </li>
+                               <li>
+                                <div class="wrapper">
+                                  <a href="#" class="wrapper-img"> <img src="../assets/dist/img/marketplace/shopping-cart/2.jpg" alt="1"/> </a>
+                                  <a href="#" class="product-title">Mercedes Ben C-Class</a>
+                                  <p>1 x <small> $65.00</small></p>
+                                  <a href="#" class="subtraction"><i class="ion-ios-close-empty"></i></a>
+                                </div><!-- /.wrapper -->
+                              </li>
+                            </ul>
+                            <div class="subtotal">
+                              <strong>Subtotal:</strong>
+                              <strong>$114.00</strong>
+                            </div><!-- /.subtotal -->
+                            <div class="view-cart">
+                              <a href="shopping-cart.html">View Cart</a>
+                              <a href="checkout.html">Checkout</a>
+                            </div><!-- /.subtotal -->
+                          </div><!-- /.rq-shopping-cart-inner-div -->
+
+
+                        </li>
+                        <li class="rq-seller become-seller"><a href="#" >Become a seller</a></li>
+                        
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  
+                </nav>
+                </div><!-- /.col-sm-9 -->
+              </div><!-- /.row -->
+            </div><!-- /.container--> 
+            </div><!-- /.rq-inner-sks -->
+           </div><!-- /.main-nav -->
+          
+          <!-- <div class="rq-banner">
+            <div class="rq-overlay"></div>/.rq-overlay
+          </div>/.rq-banner  -->
+
+        <!-- /</div>.headroom-sticky -->
+
+        <div class="header-body">
+          
+        </div> <!-- /.header-body -->
+      </header> <!-- end header -->
+
+      <div class="rq-page-content mt-74">
+        <div class="rq-content-block no-bottom-padding">
+          <div class="container">
+            <div class="rq-title-container bredcrumb-title text-center small">
+              <h2 class="rq-title">Typography</h2>
+              <ol class="breadcrumb rq-subtitle">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Page</a></li>
+                <li class="active">Typography</li>
+              </ol>
+            </div>
+            <div class="blog-grid-wrapper">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8"> <!-- start of elements portion -->
+                    <div class="element-single wow fadeIn" data-wow-delay="0s">
+                      <h3 class="elements-title">Dropcaps</h3>
+                      <div class="">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="rq-dropcaps default">
+                              A No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                              those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                            </p>
+                          </div>
+                          <div class="col-md-6">
+                            <p class="rq-dropcaps default-two">
+                              A No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                              those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rq-hr-line"></div>
+                      <div class="">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="rq-dropcaps secondary">
+                              A No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                              those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                            </p>
+                          </div>
+                          <div class="col-md-6">
+                            <p class="rq-dropcaps primary">
+                              A No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                              those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="rq-heading-style-portion" class="element-single wow fadeIn" data-wow-delay="0s">
+
+                      <h3 class="elements-title">Heading Style</h3>
+                      <div class="heading-style-simple">
+                        <h4 class="heading-title">Heading With Simple Style</h4>
+                        <p class="rq-heading-subtitle"> Heading with simple style! </p>
+                        <p class="heading-text">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                          those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.</p>
+                      </div>
+                      <div class="rq-hr-line"></div>
+                      <div class="heading-style-simple title-behind">
+                        <div class="rq-title-behind">
+                          <h1 class="rq-heading-behind">Title Behind</h1>
+                        </div>
+                        <h4 class="heading-title">Heading with title behind</h4>
+                        <p class="heading-text title-behind">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                          those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.</p>
+                      </div>
+
+                    </div>
+                    <div id="rq-testimonial-portion" class="element-single wow fadeIn" data-wow-delay="0s"> <!-- start of Testimonial -->
+                      <h3 class="elements-title">Testimonial</h3>
+                      <div class="rq-testimonial-owl-slider">
+                        <div class="rq-listing-gallery-post">
+                          <div class="rq-gallery-content">
+                            <div class="details-slider owl-carousel">
+                              <div class="item">
+                                <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+                                  but because those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet..</p>
+                                <p class="author"><a href="#">Logan Cee</a> <span>- UI/UX Web Designer</span></p>
+
+                              </div>
+                              <div class="item">
+                                <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+                                  but because those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet..</p>
+                                <p class="author"><a href="#">Logan Cee</a> <span>- UI/UX Web Designer</span></p>
+
+                              </div>
+                              <div class="item">
+                                <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+                                  but because those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet..</p>
+                                <p class="author"><a href="#">Logan Cee</a> <span>- UI/UX Web Designer</span></p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rq-hr-line"></div>
+                      <div class="rq-testimonial-normal">
+                        <div class="rq-testimonial-owl-slider">
+                          <div class="rq-listing-gallery-post">
+                            <div class="rq-gallery-content">
+                              <div class="details-slider owl-carousel">
+                                <div class="item">
+                                  <p class="testimonial-text">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+                                    but because those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet..</p>
+                                  <div class="author">
+                                    <span class="star-rating">
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                    </span>
+                                    <a href="#">Logan Cee</a>
+                                    <span>- UI/UX Web Designer</span>
+                                  </div>
+
+                                </div>
+                                <div class="item">
+                                  <p class="testimonial-text">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+                                    but because those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet..</p>
+                                  <div class="author">
+                                    <span class="star-rating">
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                    </span>
+                                    <a href="#">Logan Cee</a>
+                                    <span>- UI/UX Web Designer</span>
+                                  </div>
+
+                                </div>
+                                <div class="item">
+                                  <p class="testimonial-text">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+                                    but because those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet..</p>
+                                  <div class="author">
+                                    <span class="star-rating">
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                      <i class="ion-android-star"></i>
+                                    </span>
+                                    <a href="#">Logan Cee</a>
+                                    <span>- UI/UX Web Designer</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- end of Testimonial -->
+
+                    <div id="rq-icon-list-portion" class="element-single wow fadeIn" data-wow-delay="0s">
+                      <h3 class="elements-title">Icon List</h3>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="rq-icon-list default">
+                            <ul>
+                              <li><i class="fa fa-ellipsis-h"></i>Consectetur adipisicing elit crasturi ebemd </li>
+                              <li><i class="fa fa-font"></i> Aenean commodo ligula eget preate shp mage</li>
+                              <li><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet seta praonu tusi</li>
+                              <li><i class="fa fa-header"></i> Montes, nascetur ridiculus musoroom tanon</li>
+                              <li><i class="fa fa-cogs"></i>Is qui facit eorum claritatem sepmra based </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="rq-icon-list primary">
+                            <ul>
+                              <li><i class="fa fa-ellipsis-h"></i>Consectetur adipisicing elit crasturi ebemd </li>
+                              <li><i class="fa fa-font"></i> Aenean commodo ligula eget preate shp mage</li>
+                              <li><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet seta praonu tusi</li>
+                              <li><i class="fa fa-header"></i> Montes, nascetur ridiculus musoroom tanon</li>
+                              <li><i class="fa fa-cogs"></i>Is qui facit eorum claritatem sepmra based </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rq-hr-line"></div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="rq-icon-list circle">
+                            <ul>
+                              <li><i class="fa fa-bell-o"></i>Consectetur adipisicing elit crasturi ebemd </li>
+                              <li><i class="fa fa-bullhorn"></i> Aenean commodo ligula eget preate shp mage</li>
+                              <li><i class="fa fa-university"></i> Lorem ipsum dolor sit amet seta praonu tusi</li>
+                              <li><i class="fa fa-cube"></i> Montes, nascetur ridiculus musoroom tanon</li>
+                              <li><i class="fa fa-cogs"></i>Is qui facit eorum claritatem sepmra based </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="rq-icon-list circle primary">
+                            <ul>
+                              <li><i class="fa fa-bell-o"></i>Consectetur adipisicing elit crasturi ebemd </li>
+                              <li><i class="fa fa-bullhorn"></i> Aenean commodo ligula eget preate shp mage</li>
+                              <li><i class="fa fa-university"></i> Lorem ipsum dolor sit amet seta praonu tusi</li>
+                              <li><i class="fa fa-cube"></i> Montes, nascetur ridiculus musoroom tanon</li>
+                              <li><i class="fa fa-cogs"></i>Is qui facit eorum claritatem sepmra based </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="rq-message-box-portion" class="element-single wow fadeIn" data-wow-delay="0s"><!-- start of MessageBox -->
+                      <h3 class="elements-title">Message Box</h3>
+
+                      <div class="rq-alert rq-alert-success">
+                        <i class="icon_like"></i>
+                        <p class="alert-text">
+                          <span>Well done! You successfully read this important alert message.</span>
+                          <a href="#"><i class="icon_close"></i></a>
+                        </p>
+                      </div>
+
+                      <div class="rq-alert rq-alert-success-secondary">
+                        <i class="icon_check"></i>
+                        <p class="alert-text">
+                          <span>Well done! You successfully read this important alert message.</span>
+                        </p>
+                      </div>
+                      <div class="rq-alert rq-alert-warning">
+                        <i class="icon_shield"></i>
+                        <p class="alert-text">
+                          <span>Well done! You successfully read this important alert message.</span>
+                          <a href="#"><i class="icon_close"></i></a>
+                        </p>
+                      </div>
+
+                    </div> <!-- end of Message box -->
+
+                    <div id="rq-divider-portion" class="element-single wow fadeIn" data-wow-delay="0s">
+                      <h3 class="elements-title">Divider</h3>
+
+                      <div class="rq-divider-style color-style">
+                        <h4 class="heading-title">Color Style</h4>
+                        <p>
+                          No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                          those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                        </p>
+
+                      </div>
+                      <div class="rq-divider-style shadow-style">
+                        <h4 class="heading-style-simple-title">Shadow Style</h4>
+                        <p>
+                          No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                          those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                        </p>
+                      </div>
+
+
+                    </div> <!-- end of Divider -->
+
+                    <div id="rq-text-block-portion" class="element-single wow fadeIn" data-wow-delay="0s"><!-- start of Text Block -->
+                      <h3 class="elements-title">Text Block</h3>
+                      <div class="rq-text-block">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adinummy nibh euis mit etuer adinquam od tincmmy
+                          nibh euidunt ut laoreet dolore.Lorem ipsum dolor sit amet, consectetuer adinummy nibh euis
+                          mit etuer adinquam od tincmmy nibh euidunt ut laoreet dolore.</p>
+                      </div>
+                      <div class="rq-hr-line"></div>
+                      <div class="rq-text-block bg-image" style="background: url('../assets/dist/img/real-estate/text-block.jpg') center center no-repeat; background-size: cover;">
+                        <div class="rq-overlay"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adinummy nibh euis mit etuer adinquam od tincmmy
+                          nibh euidunt ut laoreet dolore.Lorem ipsum dolor sit amet, consectetuer adinummy nibh euis
+                          mit etuer adinquam od tincmmy nibh euidunt ut laoreet dolore.</p>
+                      </div>
+                    </div> <!-- end of Text Block -->
+
+                  </div> <!-- end of elements portion -->
+                  <div class="col-md-4"> <!-- start of side bar -->
+                    <div class="rq-sidebar sidebar" id="elements-menu">
+                      <h3 class="elements-title">Menus</h3>
+                      <ul class="nav nav-stacked rq-elements-menu rq-marketplace">
+                        <li class="active"><a href="#">Dropcaps <i class="fa fa-th-list"></i></a></li>
+                        <li><a href="#rq-heading-style-portion">Heading Style <i class="fa fa-th-list"></i></a></li>
+                        <li ><a href="#rq-testimonial-portion">Testimonial <i class="fa fa-sort-desc"></i></a></li>
+                        <li ><a href="#rq-icon-list-portion">Icon List <i class="fa fa-sort-desc"></i></a></li>
+                        <li ><a href="#rq-message-box-portion">Message Box <i class="fa fa-money"></i></a></li>
+                        <li ><a href="#rq-divider-portion">Divider <i class="fa fa-link"></i></a></li>
+                        <li ><a href="#rq-text-block-portion">Text Block <i class="fa fa-clock-o"></i></a></li>
+                      </ul>
+                    </div>
+                  </div> <!-- end of side bar -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.content-block -->
+      </div> <!-- /.page-content -->
+
+
+
+
+
+
+    </div> <!-- end #main-wrapper -->
+
+    <footer class="rq-footer no-border">
+      <div class="rq-main-footer">
+        <div class="container-fluid">
+          <!--<button class="toggle-widget">Footer widget</button>-->
+          <div class="footer-widget">
+            <div class="widget-list">
+              <a href="index.html"><img class="footer-logo" src="../assets/dist/img/marketplace/logo2.png" alt="" /></a>
+            </div>
+            <div class="widget-list">
+              <p class="widget-text">© Scholar lawyer</p>
+              <p class="widget-text">ALL RIGHTS RESERVED 2016 </p>
+            </div>
+            <div class="widget-list">
+              <ul class="address">
+                <li><a href="#">Site map</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Affiliate</a></li>
+              </ul>
+            </div>
+            <div class="widget-list">
+              <ul class="address">
+                <li><a href="#">Our Location</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="widget-list">
+              <ul class="list-unstyled social-list">
+                <li class="dropdown footer-dropdown language">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENG <span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#"><img src="../assets/dist/img/marketplace/fr.png"><span>FRENCH</span> </a></li>
+                    <li><a href="#"><img src="../assets/dist/img/marketplace/ge.png"><span>GERMAN</span></a></li>
+                    <li><a href="#"><img src="../assets/dist/img/marketplace/da.png"><span>DANISH</span></a></li>
+                    <li><a href="#"><img src="../assets/dist/img/marketplace/it.png"><span>ITALIAN</span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown footer-dropdown currency">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USD <span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#"><span>USD</span></a></li>
+                    <li><a href="#"><span>EURO</span></a></li>
+                    <li><a href="#"><span>REAL</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><i class="social_facebook_square"></i></a></li>
+                <li><a href="#"><i class="social_twitter_square"></i></a></li>
+                <li><a href="#"><i class="social_rss_square"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.rq-main-footer -->
+    </footer>
+    <script src="../assets/dist/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/jquery.flexslider-min.js"></script>
+    <script src="../assets/dist/js/selectize.min.js"></script>
+    <script src="../assets/dist/js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/jquery.counterup.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/wow.min.js"></script>
+    <script src="../assets/dist/js/owl-carousel.js"></script>
+    <script src="../assets/dist/js/jquery.nicescroll.js"></script>
+    <script src="../assets/dist/js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../assets/dist/js/lightbox.min.js"></script>
+    <script src="../assets/dist/js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

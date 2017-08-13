@@ -1,0 +1,23 @@
+.rq-recent-posts {
+  .Relative(auto);
+  .post-single {
+    position: relative;
+    padding-left: @rq-padding-large * 4 - 10;
+    min-height: @rq-margin-base * 5;
+    margin-bottom: @rq-margin-base + 5;
+    img {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 70px;
+    }
+    a {
+      .text-uppercase;
+      color: @rq-text-color-dark;
+      font-size: @rq-font-weight-base - 1;
+      &:hover {
+        color: @rq-text-color-light-dark;
+      }
+    }
+  }
+}

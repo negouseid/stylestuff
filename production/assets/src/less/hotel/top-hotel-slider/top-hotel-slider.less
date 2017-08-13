@@ -1,0 +1,100 @@
+.rq-hotel-slider {
+  position: relative;
+  width: 100%;
+  .text-center;
+}
+.top-hotel {
+  position: relative;
+  .rq-hotel-slider-details {
+    position: relative;
+    padding: @rq-padding-base + 5 @rq-padding-base;
+  }
+  .item {
+    .rq-listing-reviews {
+      position: relative;
+      padding: 0;
+    }
+    h4 {
+      font-family: @rq-font-family-secondary;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      .text-uppercase;
+      line-height: @rq-line-height-base;
+      a {
+        color: @rq-text-color-dark;
+        &:hover {
+          color: @rq-text-color-light-darker;
+        }
+      }
+    }
+    .address {
+      margin-bottom: 0;
+    }
+    h3 {
+      margin: 0;
+      font-family: @rq-font-family-heading-secondary;
+      padding-top: @rq-padding-base + 5;
+      .new-price {
+        color: @rq-primary-color;
+        font-weight: bold;
+        span {
+          font-size: @rq-font-size-h4;
+          position: relative;
+          top: -4px;
+        }
+      }
+
+      .prev-price {
+        color: @rq-text-color-base;
+        text-decoration: line-through;
+        font-size: @rq-font-size-base + 2;
+        padding-left: @rq-padding-base + 5;
+      }
+    }
+
+  }
+}
+
+
+.rq-browse-top-hotel {
+  position: relative;
+  padding-bottom: @rq-padding-base * 4;
+  padding-top: @rq-padding-base * 2;
+  border-bottom: 1px solid @rq-line-color;
+  .text-center;
+}
+.rq-tips-trick-wrapper {
+  position: relative;
+  z-index: 99999;
+  .top-hotel-blog-slider{
+    .owl-controls {
+      .owl-nav {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        width: 130px;
+        .owl-prev {
+          float: left;
+        }
+        .owl-next {
+          float: right;
+          margin-left: 30px;
+        }
+        i {
+          font-size: 50px;
+        }
+      }
+      .owl-dots {
+        display: none !important;
+      }
+    }
+  }  
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev, .owl-carousel .owl-controls .owl-nav .owl-next {
+  width: calc(100% / 5);
+}
+@media (max-width:991px) {
+  .top-hotel.owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+}

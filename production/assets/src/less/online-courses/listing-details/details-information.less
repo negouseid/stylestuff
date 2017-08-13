@@ -1,0 +1,97 @@
+// Listing information
+.rq-listing-information {
+  background: @rq-bg-light-dark;
+  position: relative;
+  padding-bottom: @rq-padding-base * 4;
+
+  .rq-listing-information-top {
+    padding-bottom: @rq-padding-base + 3;
+    border-bottom: 1px solid @rq-listing-border-light;
+    position: relative;
+    padding-top: @rq-padding-base * 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media(max-width: @screen-xs) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  }
+  .rq-listing-information-right {
+    position: relative;
+    a {
+      margin-left: @rq-margin-base;
+      -webkit-font-smoothing: antialiased;
+      @media(max-width: @screen-xs) {
+        margin-left: 0;
+        margin-right: @rq-margin-base;
+        margin-top: @rq-margin-base;
+      }
+    }
+  }
+  .rq-listing-information-title {
+    font-family: @rq-font-family-heading-secondary;
+    text-transform: uppercase;
+    color: @rq-text-color-dark;
+    margin-bottom: @rq-margin-base + 3;
+    margin: 0;
+  }
+  /*.rq-listing-information-share {*/
+  /*text-transform: uppercase;*/
+  /*background: @rq-date-color;*/
+  /*color: @rq-alt-button-text;*/
+  /*padding: @rq-padding-base ( @rq-padding-base + 5 );*/
+  /*border-radius: @rq-border-radius-base;*/
+  /*font-size: @rq-font-size-base - 1;*/
+  /*margin-right: @rq-margin-base + 1;*/
+
+  /*}*/
+  /*.rq-listing-information-follow {*/
+  /*text-transform: uppercase;*/
+  /*background: @rq-primary-color;*/
+  /*color: @rq-text-color-white;*/
+  /*padding: @rq-padding-base ( @rq-padding-base + 5 );*/
+  /*border-radius: @rq-border-radius-base;*/
+  /*font-size: @rq-font-size-base - 1;*/
+  /*}*/
+}
+// Listing information table
+.rq-listing-information-table {
+  position: relative;
+  padding-top: @rq-margin-base * 2;
+}
+.rq-listing-information-lists {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  p {
+    margin-bottom: 0;
+  }
+  .rq-listing-information-list {
+    margin-bottom: @rq-margin-base;
+  }
+
+  .rq-listing-information-field {
+    color: @rq-text-color-dark;
+    float: left;
+    text-transform: uppercase;
+    font-family: @rq-font-family-secondary;
+    @media(max-width: @screen-xs) {
+      margin-right: @rq-margin-base;
+    }
+  }
+  .rq-listing-information-data {
+    float: right;
+    color: @rq-text-color-light-darker;
+    a {
+      color: @rq-uncheck-color;
+      .text-uppercase;
+    }
+    @media(max-width: @screen-xs) {
+      float: left;
+    }
+  }
+}

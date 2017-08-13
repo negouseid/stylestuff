@@ -1,0 +1,104 @@
+.rq-listing-hero-top {
+  position: relative;
+  padding-bottom: @rq-padding-large * 2;
+  .border-bottom(lighten(@rq-date-color, 10%));
+  margin-bottom: @rq-margin-large * 3;
+  @media(min-width: @screen-md) {
+
+    .col-md-3 {
+      padding-right: 0;
+    }
+    .col-md-9 {
+      padding-left: 0;
+    }
+  }
+  .rq-listing-info-image {
+    position: relative;
+    .border-radius(50%);
+    display: block;
+    width: 220px;
+    height: 220px;
+    @media(max-width: @screen-md) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: @rq-margin-base * 3;
+    }
+
+  }
+  .rq-listing-hero-details {
+    position: relative;
+    width: 100%;
+    @media(max-width: 1200px) {
+      padding-left: @rq-padding-base * 2;
+    }
+    @media(max-width: @screen-md) {
+      padding-left: 0;
+    }
+    .rq-listing-hero-details-header {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: @rq-padding-base;
+      @media(max-width:  @screen-sm) {
+        flex-direction: column;
+      }
+      .border-bottom(@rq-date-color);
+      .rq-name {
+        position: relative;
+        h3 {
+          color: @rq-text-color-dark;
+          .text-uppercase;
+          font-family: @rq-font-family-heading-secondary;
+          margin: 0;
+          padding-bottom: @rq-padding-small - 5;
+        }
+        p {
+          margin: 0;
+          color: @rq-text-color-light-dark;
+        }
+      }
+      .rq-right-part {
+        a {
+          margin-left: @rq-margin-large * 3;
+          font-size: @rq-font-size-base - 1;
+          @media(max-width:  @screen-sm) {
+            margin-left: 0;
+          }
+        }
+        @media(max-width:  @screen-sm) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+    }
+    .rq-listing-hero-basic-info {
+      position: relative;
+      padding-top: @rq-padding-large;
+      .rq-user-adderess {
+        margin: 0;
+        p {
+          margin: 0;
+          color: @rq-text-color-dark;
+          font-size: @rq-font-size-base - 1;
+          padding-bottom: @rq-padding-small;
+          &.available {
+            i {
+              color: @rq-check-color;
+            }
+          }
+          i {
+            color: @rq-text-color-light-dark;
+          }
+          span {
+            padding-right: @rq-padding-small - 5;
+            color: @rq-text-color-light-dark;
+          }
+        }
+      }
+    }
+  }
+}

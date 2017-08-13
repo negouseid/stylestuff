@@ -1,0 +1,110 @@
+.rq-user-profile-page {
+  position: relative;
+  width: 100%;
+  .rq-user-listing-single {
+    border-bottom: 0;
+  }
+}
+.rq-user-about {
+  position: relative;
+  margin-bottom: @rq-margin-large * 2;
+  .about-text {
+    color: @rq-text-color-light-darker;
+    margin-bottom: @rq-margin-large * 2;
+  }
+}
+.rq-user-profile-basic {
+  position: relative;
+  margin-bottom: @rq-margin-base;
+  h5 {
+    margin: 0;
+    color: @rq-text-color-light-dark;
+    line-height: @rq-line-height-base;
+    padding-bottom: @rq-padding-base;
+    .text-uppercase;
+    font-family: @rq-font-family-secondary;
+  }
+  p {
+    color: @rq-text-color-light-darken;
+  }
+}
+
+.rq-user-profile-reference-section {
+  position: relative;
+  margin-bottom: @rq-margin-large * 3;
+  blockquote {
+    margin-left: 0;
+    width: 100%;
+    color: @rq-text-color-light-darker;
+    font-size: @rq-font-size-base + 4;
+    span {
+      padding-right: @rq-padding-large - 5;
+    }
+  }
+}
+
+.rq-user-reference-person {
+  position: relative;
+  padding-left: @rq-padding-large * 4;;
+  margin-top: @rq-margin-base * 2;
+  .rq-user-reference-image {
+    display: block;
+    position:absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: @rq-margin-base * 2;
+  }
+  .rq-user-reference-details {
+    position: relative;
+    > a {
+      color: @rq-text-color-dark;
+      padding-bottom: @rq-padding-small - 2;
+      display: block;
+      &:hover {
+         color: @rq-text-color-light-dark;
+      }
+      span {
+        color: @rq-text-color-light-darker;
+      }
+    }
+    .rq-user-reference-text {
+      color: @rq-text-color-light-dark;
+      font-size: @rq-font-size-base - 1;
+      a {
+        font-family: @rq-font-family-primary;
+        color: @rq-text-color-light-dark;
+        &:hover {
+          color: @rq-text-color-dark;
+        }
+      }
+    }
+  }
+}
+
+
+.rq-user-assigned-listing {
+  position: relative;
+  border-top: 0;
+  padding-bottom: @rq-padding-base * 3;
+  .rq-category-result {
+    border-top: 0;
+    padding: 0;
+    background: @rq-bg-body;
+    .rq-category-result-single {
+      &:hover {
+        background: @rq-lawyer-bg-light;
+      }
+    }
+  }
+}
+
+.rq-agency-location-map {
+  position: relative;
+  margin-bottom: @rq-margin-large * 2;
+  .rq-contact-us-map {
+    width: 100%;
+    height: 500px;
+  }
+}

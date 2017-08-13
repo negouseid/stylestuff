@@ -1,0 +1,84 @@
+/* now its working */
+
+input[type="text"] {
+  &.rq-form-element {
+    position: relative;
+    width: 100%;
+    outline: 0;
+    font-family: @rq-font-family-primary;
+    font-size: @rq-font-size-base;
+    &:focus {
+      outline: 0;
+    }
+  }
+  &.fq-newsletter-form {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid @rq-date-color;
+    width: 100%;
+    padding: @rq-padding-small @rq-padding-base * 2 @rq-padding-small 0;
+  }
+}
+
+.rq-search-form {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  //margin-top: @rq-margin-small;
+  .input-with-btn {
+    position: relative;
+    button {
+      position: absolute;
+      right: 5px;
+      top: 3px;
+      background-color: transparent;
+      color: @rq-text-color-light-dark;
+      i {
+        font-size: @rq-font-size-base;
+      }
+    }
+  }
+  input {
+    width: 100%;
+    border: 0;
+    padding: @rq-padding-small - 2 @rq-padding-base * 2.5 @rq-padding-small - 2 @rq-padding-base + 5;
+    outline: 0;
+    color: @rq-text-color-dark;
+    font-size: @rq-font-size-base - 1;
+    background-color: @rq-bg-body;
+    margin-bottom: @rq-margin-small - 4;
+    .transition(.3s);
+    border-radius: 2px;
+    &:focus,
+    &:active {
+      background-color: @rq-bg-light;
+    }
+  }
+
+  .rq-category-select {
+    position: relative;
+    margin-bottom: @rq-margin-base + 5;
+  }
+
+
+  .rq-category-select .selectize-input {
+    padding: @rq-padding-small + 2 @rq-padding-base;
+    border: 0;
+
+    &:after {
+    }
+  }
+  .rq-category-select .selectize-control.single .selectize-input:after {
+    top: @rq-font-size-base + 1;
+  }
+  .selectize-dropdown {
+    border: 0;
+  }
+  .rq-error-helper {
+    color: @rq-text-color-light-dark;
+    font-size: @rq-font-size-base - 1;
+  }
+
+}

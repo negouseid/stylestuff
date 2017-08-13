@@ -1,0 +1,172 @@
+.rq-listing-hero-top {
+  position: relative;
+  padding-bottom: @rq-padding-large * 2;
+  .border-bottom(lighten(@rq-date-color, 10%));
+  margin-bottom: @rq-margin-large * 3;
+  @media(min-width: @screen-md) {
+
+    .col-md-3 {
+      padding-right: 0;
+    }
+    .col-md-9 {
+      padding-left: 0;
+    }
+  }
+  .rq-listing-info-image {
+    position: relative;
+    .border-radius(50%);
+    display: block;
+    width: 210px;
+    height: 210px;
+    @media(max-width: @screen-md) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: @rq-margin-base * 3;
+    }
+
+  }
+  .rq-listing-hero-details {
+    position: relative;
+    width: 100%;
+    @media(max-width: 1200px) {
+      padding-left: @rq-padding-base * 2;
+    }
+    @media(max-width: @screen-md) {
+      padding-left: 0;
+    }
+    .rq-listing-hero-details-header {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: @rq-padding-base;
+      @media(max-width:  @screen-sm) {
+        flex-direction: column;
+      }
+      .border-bottom(@rq-date-color);
+      .rq-name {
+        position: relative;
+        h3 {
+          color: @rq-text-color-dark;
+          .text-uppercase;
+          font-family: @rq-font-family-heading-secondary;
+          margin: 0;
+          padding-bottom: @rq-padding-small - 5;
+        }
+        p {
+          margin: 0;
+          color: @rq-text-color-light-dark;
+          font-size: @rq-font-size-base - 1;
+        }
+      }
+      .rq-right-part {
+        display: flex;
+        align-items: center;
+        .followers {
+          position: relative;
+          margin-right: @rq-margin-base * 3;
+          a {
+            color: @rq-text-color-light-dark;
+            font-family: @rq-font-family-primary;
+            span {
+              color: @rq-text-color-dark;
+              font-weight: bold;
+              padding-right: @rq-padding-small - 5;
+            }
+          }
+        }
+        .contact-btn {
+          position: relative;
+          a {
+            margin-left: @rq-margin-small - 5;
+            @media(max-width: @screen-xs) {
+              margin-bottom: @rq-margin-small;
+            }
+          }
+        }
+        @media(max-width:  @screen-sm) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+    }
+    .rq-listing-hero-basic-info {
+      position: relative;
+      padding-top: @rq-padding-large;
+      .social {
+        position: relative;
+      }
+      .rq-user-adderess {
+        margin: 0;
+        p {
+          margin: 0;
+          color: @rq-text-color-dark;
+          font-size: @rq-font-size-base;
+          padding-bottom: @rq-padding-small;
+          &.available {
+            i {
+              color: @rq-check-color;
+              padding-right: @rq-padding-small - 3;
+            }
+          }
+          i {
+            color: @rq-text-color-light-dark;
+            padding-right: @rq-padding-small - 3;
+          }
+          span {
+            padding-right: @rq-padding-small - 5;
+            color: @rq-text-color-light-dark;
+            &.skill {
+              font-family: @rq-font-family-secondary;
+              padding-right: @rq-padding-base + 10;
+              .text-uppercase;
+              color: @rq-text-color-dark;
+              padding-left: @rq-padding-base;
+            }
+
+          }
+          a {
+            &.website {
+
+              font-family: @rq-font-family-primary;
+              color: @rq-text-color-dark;
+            }
+          }
+          &.my-resume {
+            position: relative;
+            padding-top: @rq-padding-small;
+            a {
+              .text-uppercase;
+              color: @rq-text-color-dark;
+              text-decoration: underline;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+          &.social {
+            a {
+              color: @rq-text-color-light-dark;
+              &:hover {
+                color: @rq-primary-color;
+                i {
+                  color: @rq-primary-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      .rq-user-funding {
+        position: relative;
+        @media(max-width:  @screen-sm) {
+          margin-top: @rq-margin-base;
+        }
+      }
+    }
+  }
+}

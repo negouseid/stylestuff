@@ -1,0 +1,134 @@
+.rq-real-estae-property-tab {
+  position: relative;
+  width: 100%;
+  display: flex;
+  @media(max-width: @screen-md) {
+    flex-direction: column;
+  }
+  .rq-real-estate-tab-section {
+    position: relative;
+    width: 50%;
+    @media(max-width: @screen-md) {
+      width: 100%;
+    }
+  }
+}
+
+
+.rq-property-tab-content {
+  position: relative;
+  width: 50%;
+  @media(max-width: @screen-md) {
+    width: 100%;
+  }
+  .tab-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .tab-pane {
+      height: 100%;
+    }
+  }
+  .rq-real-estate-tab-content {
+    position: relative;
+    height: 100%;
+    background-color: @rq-secondary-color;
+    display: flex;
+    flex-direction: column;
+    .rq-tab-img {
+      width: 100%;
+      height: 70%;
+      display: block;
+      @media(max-width: @screen-md) {
+        height: 400px;
+      }
+    }
+    .rq-property-details {
+      position: relative;
+      padding: @rq-padding-base * 2;
+      display: flex;
+      justify-content: space-between;
+      @media(max-width: @screen-sm) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      h3 {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: @rq-font-family-secondary;
+        width: 100%;
+        .text-uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: @rq-text-color-white;
+        -webkit-font-smoothing: antialiased;
+        @media(max-width:  @screen-sm) {
+          font-size: @rq-font-size-h4;
+        }
+        a {
+          color: @rq-text-color-white;
+          &:hover {
+            color: @rq-text-color-base;
+          }
+        }
+      }
+
+
+      h2 {
+        margin: 0;
+        font-family: @rq-font-family-heading-secondary;
+        color: @rq-primary-color;
+        @media(max-width:  @screen-sm) {
+          font-size: @rq-font-size-h3;
+        }
+      }
+      .property-title {
+        position: relative;
+        padding-right: @rq-padding-large;
+        width: 60%;
+        @media(max-width:  @screen-sm) {
+          width: 100%;
+        }
+      }
+      .property-info {
+        position: relative;
+        width: 40%;
+        @media(max-width:  @screen-sm) {
+          width: 100%;
+          margin-top: @rq-margin-base * 2;
+        }
+        .rq-property-list{
+          .no-padding-margin();
+          list-style: none;
+          li {
+            display: block;
+            color: @rq-text-color-light-dark;
+            margin-right: @rq-margin-small;
+            margin-right: @rq-margin-base + 5;
+            margin-bottom: @rq-margin-small;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            span {
+              color: @rq-text-color-white;
+            }
+            a {
+              color: @rq-text-color-white;
+              .text-uppercase;
+              -webkit-font-smoothing: antialiased;
+              font-size: 13px;
+            }
+            i {
+              position: relative;
+              top: 0;
+              padding-right: @rq-padding-small;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.rq-download-app-section {
+  position: relative;
+  .mobile-image-content {
+    position: relative;
+    max-width: 420px;
+    margin: 0 auto;
+    @media(max-width: @screen-sm) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      position: absolute;
+      @media(max-width: @screen-md) {
+        position: relative;
+      }
+    }
+  }
+  .app-text-section {
+    position: relative;
+    padding-top: @rq-padding-large * 2;
+    padding-bottom: @rq-padding-large * 3;
+
+    h5 {
+      color: @rq-text-color-dark;
+      .text-uppercase;
+      font-family: @rq-font-family-secondary;
+      letter-spacing: 1px;
+      font-size: @rq-font-size-base - 1;
+      opacity: .5;
+      margin-bottom: 5px;
+      line-height: 18px;
+    }
+    h3 {
+      color: @rq-text-color-dark;
+      margin-top: 0;
+      font-family: @rq-font-family-heading-secondary;
+      line-height: 40px;
+      .text-uppercase;
+      font-size: @rq-font-size-h2 - 6;
+      @media(max-width: @screen-sm) {
+        font-size: @rq-font-size-h3;
+        line-height: @rq-font-size-h2;
+      }
+      @media(max-width: @screen-md) {
+        font-size: @rq-font-size-h2;
+        line-height: @rq-font-size-h2 + 6;
+      }
+    }
+    ul {
+      .no-padding-margin();
+      list-style: none;
+      margin-bottom: @rq-margin-base * 3;
+      li {
+        padding: 3px 0 3px @rq-padding-large - 5;
+        color: @rq-text-color-dark;
+        font-family: @rq-font-family-secondary;
+        font-size: @rq-font-size-base - 1;
+        &:before {
+          content: "\f375";
+          font-family: "Ionicons";
+          position: absolute;
+          left: 0;
+        }
+
+      }
+    }
+    .app-download-btn {
+      position: relative;
+      margin: @rq-margin-base 0 0;
+      display: flex;
+      @media(max-width: @screen-md) {
+        justify-content: center;
+      }
+      a {
+        @media(max-width: @screen-md) {
+          margin-bottom: @rq-margin-base;
+        }
+        margin-right: @rq-margin-base * 2;
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          width: auto;
+          height: 55px;
+          @media(max-width: @screen-xs) {
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+

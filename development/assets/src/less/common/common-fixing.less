@@ -1,0 +1,131 @@
+.rq-listing-gallery-post  {	
+	.rq-gallery-content {
+		width: 100%;
+	    position: relative;
+	}
+}
+.flexslider {
+	&.post-gallery-single {
+		.flex-control-nav {
+			&.flex-control-thumbs {
+			    position: absolute;
+			    margin: 0 auto;
+			    left: 0;
+			    width: 380px;
+			    right: 0;
+			    bottom: 120px;
+			    @media (max-width: 480px) {
+			    	width: 300px;
+			    	bottom: 60px;
+			    }
+				li {
+					width: auto;
+					margin: 5px;
+					img {
+						border: 3px solid transparent;
+						border-radius: 5px;
+						@media (max-width: 480px) {
+							width: 50px;
+						}
+						&.flex-active {
+							border: 3px solid @rq-bg-sidebar;
+						}
+					}	
+				}
+			}
+			
+		}
+		.flex-direction-nav {
+			.flex-nav-prev {
+				.flex-prev {
+					&:before {
+						font-family: "Ionicons";
+						font-size: 40px;
+						display: inline-block;
+						content: "\f124";
+						color: rgba(255, 255, 255, 0.8);
+						text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+					}
+				}
+			}
+			.flex-nav-next {
+				.flex-next {
+					&:before {
+						font-family: "Ionicons";
+						font-size: 40px;
+						display: inline-block;
+						content: "\f125";
+						color: rgba(255, 255, 255, 0.8);
+						text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+					}
+				}
+			}
+			a {
+				line-height: 38px;
+			}
+		}
+		&:hover .flex-direction-nav .flex-next {
+			right: 10px;
+		}
+		&:hover .flex-direction-nav .flex-prev {
+			left: 10px;
+		}
+		.slides {
+			li {
+				img {
+					height: 100vh;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
+
+.rq-listing-single {
+	.rq-listing-gallery-post {
+		.rq-gallery-content {
+			.flexslider {
+				&.post-carousel-single {
+					position: absolute;
+					margin: 0 auto;
+					width: 400px;
+					left: 0;
+					right: 0;
+					bottom: 120px;
+					@media (max-width: 480px) {
+						width: 265px;
+					}
+					ul {
+						li {
+							border-radius: 5px;
+							border-bottom: 3px solid transparent;
+							&.flex-active-slide {
+								border: 3px solid @rq-bg-sidebar;	
+							}
+							width: 57px !important;
+							img {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}		
+		}
+	}
+}
+
+
+.rq-content-block .rq-listing-information { 
+    padding-bottom: 0;
+}
+@media (max-width: 767px) {
+	.blog-post-single-wrapper .rq-content-block .post-content .video-container {
+	    min-height: inherit;
+	}
+}
+.blog-post-single-wrapper .post-content .rq-audio iframe {
+    border: 0;
+}
+.blog-post-single-wrapper .post-content .rq-audio iframe {
+    width: 100%;
+}

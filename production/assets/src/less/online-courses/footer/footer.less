@@ -1,0 +1,32 @@
+.rq-footer {
+  .Relative(auto);
+  font-family: @rq-font-family-secondary;
+}
+
+.rq-main-footer {
+  .Relative(auto);
+  background: @rq-footer-background;
+  padding: @rq-padding-base * 3 0;
+  .rq-footer-social {
+    .no-padding-margin;
+    .list-unstyled;
+    width: 100%;
+    .text-center;
+    li {
+      display: inline-block;
+      .text-uppercase;
+      a {
+        padding: 0 @rq-padding-base * 1.5;
+        color: @rq-footer-link-color;
+        &:hover {
+          color: @rq-footer-link-color-hover;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .rq-main-footer .rq-footer-social li a {
+    padding: 0 6px;
+  }
+}

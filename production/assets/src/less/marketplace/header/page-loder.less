@@ -1,0 +1,60 @@
+#rq-page-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+}
+#rq-page-loading .rq-loading-quote {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  text-align: center;
+}
+#rq-page-loading .rq-loading-quote p {
+  font-size: 20px;
+  margin: 0;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#rq-page-loading .rq-loading-quote p span {
+  font-style: normal;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+#rq-page-loading .rq-loading-icon { 
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  transition: all 0.3s ease;
+}
+#rq-page-loading .rq-loading-icon i {
+  font-size: 60px;
+}
+#rq-page-loading .rq-loading-icon i:before {
+  color: @rq-color-border-yellow;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  transition: all 0.3s ease;
+  -ms-animation: uil-ring-anim 1s linear infinite;
+  -moz-animation: uil-ring-anim 1s linear infinite;
+  -webkit-animation: uil-ring-anim 1s linear infinite;
+  -o-animation: uil-ring-anim 1s linear infinite;
+  animation: uil-ring-anim 1s linear infinite;
+}

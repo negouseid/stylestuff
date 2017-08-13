@@ -1,0 +1,91 @@
+.header {
+  .Relative(auto);
+  .container {
+    @media(min-width: @screen-md) {
+      position: relative;
+    }
+  }
+
+
+  .navbar-collapse {
+    @media(min-width: @screen-md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &.home-header {
+    .Relative(100vh); // position: relative; width: 100%; height: 760px;
+    @media(max-width: @screen-sm) {
+      .Relative(500px);
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .header-overlay {
+      .absolute-overlay(); // mainly for overlay content
+      background: -webkit-linear-gradient(top, fade(@rq-header-gradient-overlay, 75%), rgba(0, 0, 0, 0.0));
+    }
+  }
+  &.header-menu-signle-post {
+    position: absolute;
+    top: 0;
+    left: 0;
+    .navbar {
+      &.navbar-default {
+        padding-bottom: @rq-padding-large * 4;
+
+        background: -webkit-linear-gradient(top, fade(@rq-header-gradient-overlay, 80%), rgba(0, 0, 0, 0.0));
+        background: -o-linear-gradient(top, fade(@rq-header-gradient-overlay, 80%), rgba(0, 0, 0, 0.0));
+        background: -moz-linear-gradient(top, fade(@rq-header-gradient-overlay, 80%), rgba(0, 0, 0, 0.0));
+        background: linear-gradient(top, fade(@rq-header-gradient-overlay, 80%), rgba(0, 0, 0, 0.0));
+      }
+    }
+  }
+  .header-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    .header-overlay {
+      .absolute-overlay(); // mainly for overlay content
+      background: -webkit-linear-gradient(top, fade(@rq-header-gradient-overlay, 75%), rgba(0, 0, 0, 0.0));
+    }
+    h1 {
+      color: @rq-bg-body;
+      position: relative;
+      z-index: 11;
+      text-transform: uppercase;
+      margin-bottom: @rq-padding-base - 5;
+      font-family: @rq-font-family-heading-secondary;
+      font-size: @rq-font-size-h2;
+      span {
+        color: @rq-primary-color;
+      }
+      @media(max-width:  @screen-sm) {
+        line-height: 55px;
+        font-size: @rq-font-size-h3;
+      }
+    }
+    p {
+      color: @rq-bg-light;
+      font-size: @rq-font-size-base + 2;
+      position: relative;
+      z-index: 11;
+    }
+  }
+}
+.sticky-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  z-index: 99 !important;
+  animation: fadeIn .4s ease;
+}
+
+

@@ -1,0 +1,26 @@
+.rq-text-block {
+  position: relative;
+  padding: @rq-padding-large * 2 0;
+  p {
+    margin: 0;
+    color: @rq-text-color-light-darker;
+  }
+  &.bg-image {
+    position: relative;
+    padding: @rq-padding-large * 2;
+    .rq-overlay {
+      .absolute-overlay();
+      background: fade(@text-block-overlay, 90%);
+    }
+    p {
+      color: @rq-text-color-white;
+      position: relative;
+      z-index: 10;
+    }
+  }
+}
+
+
+#rq-text-block-portion {
+  margin-bottom: @rq-margin-large * 5;
+}

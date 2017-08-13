@@ -1,0 +1,29 @@
+.rq-listing-items {
+  .rq-listing-item {
+    .rq-lisitng-item-col-loc {
+      &.hotel {
+        margin-bottom: @rq-margin-small;
+      }
+    }
+  }
+}
+.rq-listing-reviews {
+  color: @rq-text-color-light-dark;
+  font-size: @rq-font-size-base - 1;
+  line-height: @rq-font-size-h2 - 6;
+
+  ul {
+    margin-right: @rq-margin-small / 2;
+  }
+
+  li {
+    i {
+      color: @rq-rating-color;
+      font-size: @rq-font-size-h4;
+      
+      &.not-fill {
+        color: @rq-text-color-base;
+      }
+    }
+  }
+}

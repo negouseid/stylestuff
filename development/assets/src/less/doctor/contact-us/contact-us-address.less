@@ -1,0 +1,66 @@
+.rq-address-details {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media(max-width: @screen-sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.rq-address-single {
+  position: relative;
+  @media(max-width: @screen-sm) {
+    margin-bottom: @rq-margin-large * 2;
+    .text-center;
+  }
+  i {
+    font-size: @rq-font-size-h2;
+    color :@rq-primary-color;
+  }
+  h4 {
+    margin: @rq-margin-base + 5 0 0;
+    .text-uppercase;
+
+    &.rq-capitalize {
+      text-transform: capitalize;
+    }
+  }
+  .rq-address-text {
+    font-size: @rq-font-size-base - 1;
+    margin: 0;
+    color: @rq-text-color-light-darker;
+  }
+}
+
+/*// google map hack*/
+/*.gm-style {*/
+  /*.gm-style-iw {*/
+    /*top: 0 !important;*/
+    /*left: 0 !important;*/
+  /*}*/
+  /*img {*/
+    /*// height: 155px;*/
+  /*}*/
+/*}*/
+
+/*.rq-map-address-single {*/
+  /*h4 {*/
+    /*font-size: @rq-font-size-h4;*/
+    /*line-height: @rq-font-size-h3;*/
+    /*.text-uppercase;*/
+  /*}*/
+
+  /*.rq-map-img {*/
+    /*float: left;*/
+    /*width: 42%;*/
+  /*}*/
+  /*.rq-map-loc {*/
+    /*float: left;*/
+    /*width: 58%;*/
+    /*padding-left: @rq-padding-base;*/
+  /*}*/
+/*}*/
+/*div.map-popup {*/
+  /*overflow: hidden;*/
+/*}*/

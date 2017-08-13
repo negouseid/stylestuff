@@ -1,0 +1,114 @@
+.top-products { 
+	background: @rq-color-background-ash;
+	padding: 100px 0;
+	h2 {
+		text-align: center;
+		font-size: 30px;
+		line-height: 36px;
+		font-family: 'Oswald', sans-serif;
+		color: @rq-color-text-black-deep;
+		text-transform: uppercase;
+		margin-bottom: 65px;
+		@media @responsive767 {
+			font-size: 22px;
+			margin-bottom: 30px;
+		}
+	}
+	.product-carousel {
+		.item {
+			border: 1px solid @rq-color-border-ash2;
+			background: @rq-color-white;
+			.inner-elements {
+				text-align: center;
+				padding: 20px 0;
+				p {
+					margin-bottom: 0;
+					i {
+						color: @rq-color-yellow2;
+					}
+				}
+				> a {
+					font-family: 'montserrat', sans-serif;
+					font-size: 18px;
+					line-height: 30px;
+					color: @rq-color-text-black-deep;
+					display: block;
+					transition: all 0.3s ease-in-out;
+				}
+				span {
+					color: @rq-color-text-ash2;
+					font-weight: 600;
+					small {
+						font-size: 14px;
+						font-weight: 400;
+					}
+
+				}
+				h2 {
+					color: @rq-color-border-yellow;
+					font-family: 'Oswald', sans-serif;
+					font-weight: 600;
+					font-size: 24px;
+					line-height: 30px;
+					margin-top: 15px;
+					margin-bottom: 15px;
+					-webkit-font-smoothing: antialiased;	
+					del {
+						color: @rq-date-color;
+						font-size: 16px;
+						line-height: 22px;
+						margin-left: 10px;
+					}
+				}
+			}
+			&:hover .product-title {
+				text-decoration: underline;
+			}
+			&:hover .inner-elements span > a {
+				color: @rq-doctor-finding-list-link-color;
+			}
+		}
+		.owl-nav {
+			.owl-prev, .owl-next {
+				position: absolute;
+				height: 100%;
+				width: calc(~"100% / 5 - 7px");
+				top: 0;
+				background: rgba(255, 255, 255, 0.8);
+				padding-top: 140px;
+				text-align: center;
+				&:hover i {
+					color: @rq-color-text-black-deep;
+				}
+				@media only screen and (min-width: 1000px) and (max-width: 1150px) {
+					width: calc(~"100% / 4 - 7px");	 
+				}
+				@media @responsive991, @responsive767 {
+					width: calc(~"100% / 3 - 7px");	 
+				}
+				@media (max-width:600px) {
+					width: 50px;
+				}
+				
+				i {
+					font-size: 70px;
+					@media (max-width:600px) {
+						font-size: 40px;
+					}
+					&:hover {
+						color: @rq-color-text-black-deep;
+					}
+				}
+			}
+			.owl-prev {
+				left: 0;
+			}
+			.owl-next {
+				right: 0;
+			}
+		}
+	}
+}
+.ml-5 {
+	margin-left: 5px;
+}

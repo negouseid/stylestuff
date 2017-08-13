@@ -1,0 +1,21 @@
+.rq-masonry-wrapper {
+  .Relative(auto);
+  margin-top: -(@rq-margin-base * 2 );
+  margin-bottom: @rq-margin-large * 5.4;
+
+  .blog-width {
+    width: 50%;
+    padding: 0 @rq-padding-base;
+    @media(max-width: @screen-sm) {
+      width: 100%;
+    }
+  }
+  .details-slider {
+    .owl-prev {
+      left: @rq-padding-base;
+    }
+    .owl-next {
+      right: @rq-padding-base;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.widget-categories {
+  position: relative;
+  ul {
+    .no-padding-margin();
+    list-style: none;
+    li {
+      padding: @rq-padding-small - 5 0 @rq-padding-small - 5 @rq-padding-small * 2;
+      -webkit-font-smoothing: auto;
+      &:before {
+        content: "\45";
+        font-family: 'ElegantIcons';
+        position: absolute;
+        left: 0;
+        color: @rq-text-color-light-darker;
+      }
+      a {
+        font-family: @rq-font-family-primary;
+        display: inlin-block;
+        color: @rq-text-color-light-darker;
+        span {
+          float: right;
+        }
+        &:hover {
+          color: @rq-text-color-dark;
+        }
+      }
+    }
+  }
+}

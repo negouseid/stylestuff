@@ -1,0 +1,36 @@
+.rq-interested-category {
+  .Relative(auto);
+}
+
+.rq-category-single {
+  .Relative(auto);
+  .text-center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: @rq-margin-base * 2;
+  padding: @rq-padding-base + 5 @rq-padding-base * 2 + 5;
+  transition: all .3s ease-in-out;
+  .rq-block-intro {
+    margin: 0;
+    font-size: @rq-padding-base * 4;
+    color: @rq-primary-color;
+    font-family: @rq-font-family-secondary;
+    font-weight: bold;
+  }
+  .rq-feature-title {
+    margin: 0;
+    padding: @rq-padding-base + 5 0 @rq-padding-small - 5;
+    .text-uppercase;
+    font-family: @rq-font-family-secondary;
+    line-height: @rq-font-size-h3;
+  }
+
+}
+
+.rq-learn-more {
+  position: relative;
+  padding-top: @rq-padding-large;
+  .text-center;
+}

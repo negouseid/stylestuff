@@ -1,0 +1,126 @@
+@media (max-width: @screen-md) {
+  .navbar-default {
+    .container,
+    .container-fluid{
+      .navbar-collapse {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        padding: 0;
+        padding-right: @rq-padding-base;
+
+      }
+      .navbar-nav {
+        margin-top: @rq-margin-base;
+        background: @rq-bg-body;
+        margin-left: 0;
+        margin-top: 10px;
+
+        > .active {
+          > a {
+            &:hover,
+            &:focus {
+              background: transparent;
+              color: @rq-primary-color;
+            }
+          }
+        }
+        > li {
+          &.login-register-link {
+            text-align: center;
+            margin-left: 0;
+          }
+          &:hover {
+            a {
+              border-bottom: 0;
+            }
+          }
+          margin: 0;
+          border-bottom: 1px solid @rq-bg-light;
+          &.active,
+          &.open {
+            > a {
+              border-bottom: 0;
+              color: @rq-primary-color !important;
+              &:hover,
+              &:focus {
+                color: @rq-primary-color;
+                background: transparent;
+              }
+            }
+          }
+          a {
+            color: @rq-text-color-dark;
+            span {
+              float: right;
+            }
+            &:hover {
+              border-bottom: 0;
+              color: @rq-primary-color;
+            }
+          }
+        }
+        .open {
+          > .dropdown-menu {
+            padding-bottom: @rq-padding-base;
+            > li {
+              >  a {
+                color: darken(@rq-bg-light, 30%);
+                &:hover,
+                &:focus {
+                  color: @rq-primary-color;
+                  border-bottom: o;
+                }
+              }
+              .dropdown-menu {
+                display: block;
+                > li {
+                  a {
+                    color: darken(@rq-bg-light, 30%);
+                    &:hover {
+                      color: @rq-primary-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .navbar-toggle {
+        border-color: @rq-primary-color;
+        margin-top: 8px;
+
+        &:hover {
+          background: transparent;
+          .icon-bar {
+            background-color: @rq-primary-color;
+          }
+        }
+        &:focus {
+          background: transparent;
+        }
+        .border-radius(0);
+        .icon-bar {
+          background-color: @rq-text-color-white;
+          .transition(.3s);
+        }
+      }
+    }
+  }
+  .ion-chevron-right {
+    &:before {
+      content: "\f123";
+    }
+  }
+}
+
+.sticky-scroll {
+  .navbar-toggle {
+    .icon-bar {
+      background-color: @rq-text-color-white;
+    }
+  }
+}
+

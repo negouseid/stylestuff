@@ -1,0 +1,24 @@
+.rq-divider-style {
+  position: relative;
+  padding: @rq-padding-large * 2;
+  .text-center;
+  h4 {
+    .text-uppercase;
+    margin: 0;
+    padding-bottom: @rq-padding-large - 5;
+  }
+  p {
+    margin: 0;
+    font-size: @rq-font-size-base - 1;
+    color: @rq-text-color-light-darker;
+  }
+
+  &.color-style {
+    background-color: @rq-blog-hover;
+  }
+  &.shadow-style {
+    border-bottom: 1px solid @rq-line-color;
+    position:relative;
+    //box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  }
+}

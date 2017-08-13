@@ -1,0 +1,35 @@
+.blog-grid-wrapper {
+  position: relative;
+  &:before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 71%;
+    background: @rq-text-color-base;
+    @media (max-width: @screen-md) {
+      display: none;
+    }
+    @media (min-width: 1400px) {
+      width: 2px;
+    }
+  }
+}
+.rq-blog-grid-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: @rq-margin-base;
+  margin-bottom: @rq-margin-large * 5.4;
+  &.home-tips {
+    margin-bottom: 0;
+    margin-top: 0;
+    .rq-blog-grid-single {
+      .Relative(280px);
+    }
+
+  }
+  .rq-pagination {
+    margin-top: @rq-margin-large * 1.5;
+  }
+}

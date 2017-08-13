@@ -1,0 +1,124 @@
+.rq-icon-box-single {
+  position: relative;
+  width: 100%;
+  &:hover {
+    .rq-icon {
+      box-shadow: 0 0 0 7px fade(@rq-primary-color, 20%);
+    }
+    .rq-icon-home {
+      i {
+        box-shadow: 0 0 0 7px fade(@rq-primary-color, 20%);
+      }
+    }
+  }
+  .text-center;
+  .rq-icon{
+    width: 100px;
+    height: 100px;
+    background: @rq-primary-color;
+    border-radius: 50%;
+    line-height: 100px;
+    .transition(.3s);
+    box-shadow: 0 0 0 5px fade(@rq-primary-color, 20%);
+    .text-center;
+    margin: 0 auto;
+    margin-bottom: @rq-margin-large;
+    position: relative;
+    z-index: 7;
+    img {
+      width: 45px;
+      margin: 0 auto;
+    }
+    i {
+      font-size: @rq-font-size-h2;
+      color: @rq-text-color-white;
+    }
+  }
+  h5 {
+    .text-uppercase;
+    font-family: @rq-font-family-secondary;
+    margin: 0;
+    line-height: @rq-line-height-base;
+  }
+  p {
+    font-size: @rq-font-size-base - 1;
+  }
+  .rq-icon-home {
+    i {
+      width: 100px;
+      height: 100px;
+      background: @rq-primary-color;
+      border-radius: 50%;
+      line-height: 100px;
+      .transition(.3s);
+      box-shadow: 0 0 0 5px fade(@rq-primary-color, 20%);
+      .text-center;
+      margin: 0 auto;
+      margin-bottom: @rq-margin-large;
+      position: relative;
+      z-index: 7;
+      font-size: @rq-font-size-h2;
+      color: @rq-text-color-white;
+      display: block;
+      .transition(.3s);
+    }
+  }
+}
+
+
+.rq-icon-box-wrapper {
+  position: relative;
+  padding-bottom: @rq-padding-large * 3;
+  .row {
+    .col-md-3 {
+      &:first-child {
+        .rq-icon-home {
+          &:after {
+            display: none;
+          }
+        }
+      }
+      &:last-child {
+        .rq-icon-home {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  position: relative;
+  .rq-icon-home {
+    position: relative;
+    margin-bottom: @rq-margin-base;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: -30px;
+      width: 55%;
+      height: 1px;
+      background: @rq-date-color;
+      z-index: 4;
+      @media(max-width:  @screen-sm) {
+        display: none
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: -30px;
+      width: 55%;
+      height: 1px;
+      background: @rq-date-color;
+      z-index: 4;
+      @media(max-width:  @screen-sm) {
+        display: none
+      }
+    }
+
+  }
+}

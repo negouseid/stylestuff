@@ -1,0 +1,29 @@
+.rq-real-estate-tab-section {
+  position: relative;
+  padding: @rq-padding-small * 6;
+  @media(max-width:  @screen-sm) {
+    padding: @rq-padding-base * 3  @rq-padding-base;
+  }
+  .nav-tabs {
+    border: 0;
+    margin: 0;
+    li {
+      width: 100%;
+      &.active {
+        border: 0;
+        a {
+          border: 0;
+          background: @rq-bg-light;
+          padding: 0;
+        }
+      }
+      a {
+        border: 0;
+        padding: 0;
+        .rq-category-result-single {
+          border-bottom: 1px solid @rq-line-color;
+        }
+      }
+    }
+  }
+}

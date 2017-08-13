@@ -1,0 +1,32 @@
+.rq-listing-reviews {
+  position: relative;
+  display: inline-block;
+  .rq-reviews {
+    list-style: none;
+    .no-padding-margin();
+    float: left;
+    margin-right: @rq-margin-base;
+    li {
+      display: inline-block;
+      i {
+        font-size: @rq-font-size-base + 2;
+      }
+    }
+  }
+  span {
+    font-size: @rq-font-size-base - 1;
+    font-family: @rq-font-family-primary;
+  }
+}
+
+
+.rq-rating-star-field {
+  position: relative;
+  padding-bottom: @rq-padding-base;
+  border-bottom: 1px solid @rq-line-color;
+  padding-top: @rq-padding-small;
+  .transition(.2s);
+  &:hover {
+    border-color: @rq-text-color-dark;
+  }
+}

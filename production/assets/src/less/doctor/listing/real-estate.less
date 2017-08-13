@@ -1,0 +1,50 @@
+.rq-listing-price-amount {
+  margin-top: @rq-margin-base;
+  margin-bottom: @rq-margin-base + 5;
+  line-height: @rq-line-height-base;
+  color: @rq-primary-color;
+}
+
+.rq-lisitng-item-col {
+  &.real-estate {
+    padding-bottom: @rq-padding-base + 2;
+    &.col-sm-6 {
+      padding-right: 0;
+    }
+
+    i {
+      color: @rq-text-color-light-darker;
+    }
+    a {
+      text-transform: uppercase;
+    }
+
+    .navbar-nav {
+      li {
+        color: @rq-text-color-dark;
+        margin-right: @rq-margin-base;
+      }
+    }
+  }
+}
+
+// Icon sprite
+.rq-bed-icon,
+.rq-bath-icon { 
+  display: inline-block;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAxCAYAAABZLLCzAAADCElEQVRYhe3YO4hdRRzH8U9CjJfVQoMEgzaG9UGIFiEE4ytaqFhIEExUJMRCGUWCWAg2IpaBRbAcxGchdlGIj85CRZA1BBVf+EglGMMSwirL5rJr8Z8ld6832TPnZJPm/pq555z5z3zvf/7z+M+axcVFTZRS2ow30MO/I6qsw1r0sTDie6+8fy7nfKRJn+sakRU+XIXbcXUBGdRxXI7ZUm9Q/fL9QzyPfecb7h98gdvwOOYGANfiO7yKF3FzARrs5y18hk1NO6yBO4l7MYnXcKxALZTyHawv4PstH9pb8EqxObYacPPCG0dxeMT3aRGL0xiOqaPYVX73NVQNXA934aby/JflntuL7cKzPzvjuQVcj4dFKLy7GnCP4FPMYAu2DsEdLu19j3sG7BaEtz4QE+WO1YDbiJ0V9Zcp5wxSSp83tamBm8Xr+M3/l5EVlVJawDViuWmkGrgZbMCtNR0MaBa/lHYaqdZz8yKmfsQlFbancWPp7/hqwG0Qs3UnfqiwW9IkvsG3TQ3WNN1bL4aqA/tCagzXVmO4thrDtdUYrq1qtq+zKqU0iWfESfi0OMNN5ZznurTb2XMppadF8vK3OK1swpXi5NxJneBSSndjj/DaZbhCnHrnjc5dq9R1WF8WuegBfJVzfqkr0KBanUpSSk+KbGqLiLONeB9/5JzfvihwKaUJHBLx9BHeFBlVD0/gQTGku3POo64sqlQ7rJ/gZM75/qH3s5jCVErpUKm3a9i4Vo0nRErpUcznnHefq17O+SHMlfoXBg534mDDugfFhU8n1Wb8B1JKD6xg1xf5wqkuYFboZFj34Xdsc26PL61vW9tCLakG7mNnEuq+uFFamqlzmBDLSk/M2Ou6wtUuJXvxk0gT/8Rm/IobRMI8Kby7Pef8Xle42u3rKZG77hGZ/2Ol3IcdA8/PdgWjfp17QWTsEyLgp3GilDPiHu6EisT5fMLtx5e4VgzvtgK2A1+L+7kjYqfo7L3aYV0v/tBSeelZys7HJcbXEe01hmurMVxbjeHaagzXVv8B3RbBTmMq4eoAAAAASUVORK5CYII=') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  margin-right: @rq-margin-base;
+}
+.rq-bed-icon { 
+  background-position: -10px -0px;
+  width: 19px;
+  height: 12px;
+}
+.rq-bath-icon { 
+  background-position: -10px -22px;
+  width: 13px;
+  height: 17px;
+}

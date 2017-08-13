@@ -1,0 +1,47 @@
+
+.rq-online-course-slider {
+  position: relative;
+  &.rq-blog {
+    .owl-controls{
+      position: absolute;
+    }
+  }
+  .item {
+    padding-bottom: 60px;
+  }
+  .owl-dots {
+    display: none !important;
+  }
+.owl-controls{
+  position: static;
+}
+
+  .top-online-course .owl-prev, .top-online-course .owl-next {
+    display: inline-block;
+    font-family: "Ionicons";
+    font-size: 45px;
+    position: absolute;
+    top: 0;
+    padding-top: @rq-padding-small * 9;
+     background: fade(@rq-text-color-white, 80%);
+    line-height: 1;
+    min-height: 465px;
+    color: @rq-text-color-light-dark;
+
+    line-height: 40px;
+    text-align: center;
+    .transition(.3s);
+    &:hover {
+      color: @rq-text-color-dark;
+    }
+  }
+  .top-online-course .owl-prev {
+    left: 0;
+  }
+  .top-online-course .owl-next {
+    right: 0;
+  }
+
+}
+
+

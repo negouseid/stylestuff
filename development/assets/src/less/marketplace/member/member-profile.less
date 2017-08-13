@@ -1,0 +1,206 @@
+.rq-profile-banner {
+	background: url(../img/marketplace/member/profile/bg.jpg) no-repeat;
+	background-size: cover;
+	padding: 135px 0;
+	.rq-title-container {
+		padding-bottom: 0;
+		padding-bottom: 40px;
+	}
+}
+.rq-listing-hero-top { 
+    position: relative;
+    padding-bottom: 50px;
+    border-bottom: 1px solid @rq-date-color;
+    margin-bottom: 75px;
+    .rq-listing-info-image {
+	    position: relative;
+	    border-radius: 50%;
+	    display: block;
+	    width: 210px;
+	    height: 210px;
+	    @media @responsive991, @responsive767, @responsive480 { 
+	    	margin: 0 auto 10px;
+	    }
+	    @media @responsive380 { 
+	    	margin: 0 auto 30px;
+	    }
+	}
+	.rq-listing-hero-details {
+	    position: relative;
+	    width: 100%;
+	    .rq-listing-hero-details-header {
+		    display: flex;
+		    position: relative;
+		    justify-content: space-between;
+		    align-items: center;
+		    padding-bottom: 15px;
+		    border-bottom: 1px solid @rq-date-color;
+		    @media @responsive380 {
+		    	display: block;
+		    }
+		    .rq-right-part {
+			    display: flex;
+			    align-items: center;
+			}
+			.rq-name {
+				position: relative;
+				h3 {
+				    color: @rq-color-text-black-deep;
+				    text-transform: uppercase;
+				    font-family: "Oswald Regular";
+				    margin: 0;
+				    padding-bottom: 5px;
+				}
+				p {
+				    margin: 0;
+				    color: @rq-color-text-ash2;
+				    font-size: 13px;
+				}
+			}
+			.rq-right-part {
+			    display: flex;
+			    align-items: center;
+			    .followers {
+				    position: relative;
+				    margin-right: 45px;
+				    a {
+					    color: @rq-color-text-ash2;
+					    font-family: "Open Sans";
+					    span {
+						    color: @rq-color-text-black-deep;
+						    font-weight: bold;
+						    padding-right: 5px;
+						}
+					}
+				}
+				.contact-btn {
+				    position: relative;
+				    a {
+					    margin-left: 5px;
+					    i {
+						    padding-left: 0;
+						    padding-right: 10px;
+						    font-size: 13px;
+						    top: 1px;
+						}
+					}
+				}
+			}
+		}
+		.rq-listing-hero-basic-info {
+		    position: relative;
+		    padding-top: 25px;
+		    .rq-user-adderess {
+			    margin: 0;
+			    p {
+				    margin: 0;
+				    color: @rq-color-text-black-deep;
+				    font-size: 14px;
+				    padding-bottom: 10px;
+				    &.my-resume {
+					    position: relative;
+					    padding-top: 10px;
+					}
+					i {
+					    color: @rq-color-text-ash2;
+					    padding-right: 7px;
+					}
+					span {
+					    padding-right: 5px;
+					    color: @rq-color-text-ash2;
+					}
+					&.social {
+						position: relative;
+						.skill {
+						    font-family: "Montserrat-Regular";
+						    padding-right: 25px;
+						    text-transform: uppercase;
+						    color: @rq-color-text-black-deep;
+						    padding-left: 0;
+						}    
+					    a {
+					    	&:hover i {
+					    		color: @rq-color-text-blue !important;
+					    	}
+					    }
+						
+					} 
+				}
+			}
+		}
+	}	
+}
+.featured-products {
+	&.fp2 {
+		padding-top: 0;
+		h2 {
+			text-align: left;
+			border-bottom: 1px solid @rq-date-color;
+			padding-bottom: 10px;
+			font-size: 24px;
+		}
+	}
+}
+.rq-profile-tab {
+	.nav-tabs {
+		border-bottom: 1px solid @rq-date-color;
+		padding-bottom: 10px;
+		margin-bottom: 45px;
+		> li {
+			&.active {
+				> a {
+					border: 0;
+					color: @rq-color-text-black-deep;
+					&:hover {
+						border: 0;
+					}
+				}
+			}
+			> a {
+				font-size: 24px;
+				font-family: 'Oswald',sans-serif;
+				line-height: 30px;
+				color: @rq-date-color;
+				text-transform: uppercase;
+				border: 0;
+				font-weight: 300;
+				&:hover {
+					background: none;
+					color: @rq-color-text-black-deep;
+					border: 0;
+				}
+			}
+		}
+	}
+	.tab-content {
+		.tab-pane {
+			p {
+				color: @rq-color-text-ash5;
+				font-weight: 300;
+				text-align: justify;
+			}
+		}
+	}
+}
+.rq-btn-hireing {
+    background: @rq-color-yellow3;
+    color: @rq-color-white;
+    padding: 2px 10px;
+    font-size: 13px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    -webkit-font-smoothing: antialiased;
+    @media @responsive767, @responsive480 {
+    	margin-bottom: 10px;
+    }
+   
+}
+.rq-btn-following {
+    background: @rq-color-text-green3;
+    color: @rq-color-white;
+    padding: 2px 10px;
+    font-size: 13px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    -webkit-font-smoothing: antialiased;
+}

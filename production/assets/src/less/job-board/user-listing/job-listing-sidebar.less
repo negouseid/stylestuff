@@ -1,0 +1,42 @@
+.rq-job-listig-sidebar {
+  position: relative;
+  padding-left: @rq-padding-base * 4;
+  @media(max-width: @screen-lg) {
+    padding-left: 0;
+  }
+}
+.rq-sidebar-wrapper {
+  position: relative;
+  padding: @rq-padding-base * 2;
+  background-color: @rq-job-board-sidevar-bg;
+  h5 {
+    color: @rq-text-color-dark;
+    font-family: @rq-font-family-secondary;
+    font-size: @rq-font-size-base;
+    .text-uppercase;
+    margin: 0;
+    padding-bottom: @rq-padding-base;
+    line-height: @rq-font-size-base + 4;
+  }
+}
+
+.rq-search-component-single {
+  position: relative;
+  width: 100%;
+  padding-bottom: @rq-padding-base + 2;
+  margin-bottom: @rq-margin-base;
+  display: block;
+  &.with-border {
+    border-bottom: 1px solid @rq-date-color;
+    margin-bottom: @rq-margin-base * 2;
+  }
+  .rq-radiobox {
+    display: inline-block;
+    width: 45%;
+    label {
+      cursor: pointer;
+      color: @rq-text-color-light-darken;
+    }
+
+  }
+}

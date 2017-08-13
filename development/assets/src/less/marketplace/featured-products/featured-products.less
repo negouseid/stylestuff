@@ -1,0 +1,176 @@
+.featured-products {
+	padding: 100px 0 140px;
+	background: @rq-color-white;
+	@media @responsive767, @responsive480  {
+		padding: 50px 0;
+	}
+	.container {
+		h2 {
+			margin-top: 0;
+			margin-bottom: 65px;
+			font-size: 30px;
+			line-height: 36px;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 1px;
+			@media @responsive767, @responsive480  {
+				font-size: 22px;
+				margin-bottom: 40px;
+			}
+		}
+		.row {
+			
+			.products {
+				figure {
+					position: relative;
+					overflow: hidden;
+					transition: all 0.3s ease-in-out;
+					img {}
+					figcaption {
+						button {
+							position: absolute;
+							bottom: -50px;
+							left: 0;
+							background: @rq-color-text-black-deep;
+							height: 45px;
+							font-size: 12px;
+							font-family: 'Montserrat', Sans-serif;
+							width: calc(~"100% - 55px");
+							text-transform: uppercase;
+							color: @rq-color-white;
+							border: none;
+							font-weight: 400; 
+							transition: all 0.3s ease-in-out; 
+							@media @responsive991 {
+								font-size: 9px;
+							}
+							span {
+								font-size: 18px;
+								margin-right: 10px;
+								@media @responsive991 {
+									font-size: 13px;
+									margin-left: 5px;  
+								}
+							}
+
+						}
+						a {
+							position: absolute;
+							bottom: -50px;
+							right: 0;
+							background: @rq-color-text-ash3;
+							height: 45px;
+							width: 55px;
+							text-align: center;
+							padding-top: 10px;
+							transition: all 0.3s ease-in-out;
+							i {
+								color: @rq-color-white; 
+							}
+						}
+					}
+					&:hover figcaption button, &:hover figcaption a {
+						bottom: 0;
+					}
+					&:hover .product-details a {
+						color: @rq-color-text-black-deep;
+					}
+				}
+				.product-details {
+					text-align: center;
+					margin-bottom: 40px;
+					a {
+						display: block;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 14px;
+						text-transform: uppercase;
+						margin-top: 20px;
+						color: @rq-color-text-black-deep;
+						-webkit-font-smoothing: antialiased;
+						&:hover {
+							color: @rq-color-text-ash2;
+						}
+					}
+					h3 {
+						margin: 0;
+						margin-top: 15px;
+						font-family: 'Oswald', sans-serif;
+						font-size: 18px;
+						line-height: 24px;
+						color: @rq-color-text-black-deep;
+						font-weight: 400; 
+						-webkit-font-smoothing: antialiased;
+						del {
+							font-size: 14px;
+							color: @rq-color-text-ash2;
+							margin-left: 5px;
+						}
+					}
+				}
+			}
+			
+		}
+		.rq-all-products {
+			background: @rq-color-border-yellow;
+			display: block;
+			padding: 13px;
+			text-transform: uppercase;
+			border-radius: 2px;
+			margin: 0 auto;
+			width: 210px;
+			text-align: center;
+			color: @rq-color-white; 
+			i {
+				margin-left: 10px;
+			}
+		}
+		.rq-browse-top-hotel {
+			.rq-btn {
+				display: inline-block;
+				margin-bottom: 0;
+				font-weight: normal;
+				text-align: center;
+				vertical-align: middle;
+				touch-action: manipulation;
+				cursor: pointer;
+				background-image: none;
+				border: 1px solid transparent;
+				white-space: nowrap;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				font-family: "Montserrat-Regular";
+				text-transform: uppercase;
+				-webkit-transition: 0.3s;
+				-o-transition: 0.3s;
+				transition: 0.3s;
+				transition: all 0.3s ease;
+				&.rq-btn-primary {
+					background: @rq-color-border-yellow;
+					color: @rq-color-text-ash4;
+					padding: 10px 30px;
+					border-radius: 2px;
+					margin: 0 auto;
+					display: block;
+					width: 220px;
+					&:hover {
+						background: darken(@rq-color-border-yellow, 10%); 
+					}
+					i {
+						position: relative;
+						top: 4px;
+						padding-left: 6px;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.rq-btn-primary {
+	&:hover {
+		background: darken(@rq-color-border-yellow, 10%) !important; 
+	} 
+}

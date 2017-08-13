@@ -1,0 +1,37 @@
+.rq-listing-banner {
+  // background-image: url('../img/company-listing-banner.jpg');
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+  .Relative(100vh);
+
+  .rq-listing-banner-overlay {
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .rq-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Relative(100%);
+    .text-center;
+  }
+  h1 {
+    // display: inline-block;
+    font-family: @rq-font-family-heading-secondary;
+    line-height: @rq-padding-base * 4;
+    color: @rq-text-color-white;
+    text-transform: uppercase;
+    z-index: 3;
+    letter-spacing: 1px;
+    font-weight: @rq-font-weight-bold - 100;
+    @media(max-width: @screen-xs) {
+      font-size: @rq-font-size-h2;
+      line-height: @rq-font-size-h1;
+    }
+  }
+}
+

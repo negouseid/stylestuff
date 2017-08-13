@@ -1,0 +1,143 @@
+.rq-title-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 60px;
+    z-index: 20;
+    .breadcrumb {
+    	&.rq-subtitle {
+		    margin: 0 auto;
+		}
+
+    }
+}
+.rq-blog-listing {
+    position: relative;
+    width: 100%;
+    height: auto;
+    .nav-tabs {
+	    border-bottom: 0;
+	    margin-top: 0;
+	    text-align: center;
+	    li {
+		    float: none;
+		    display: inline-block;
+		    border: 0;
+		    &.active {
+		    	a {
+				    color: @rq-color-text-black-deep;
+				    border: 0;
+				}
+		    }
+		    a {
+			    border: 0;
+			    text-transform: uppercase;
+			    color: @rq-color-text-ash2;
+			    -webkit-font-smoothing: antialiased;
+			}
+		}
+	}
+}
+.rq-listing-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+.rq-listing-single {
+    text-align: center;
+    position: relative;
+    margin-bottom: 70px;
+    .rq-listing-title {
+	    text-transform: uppercase;
+	    margin: 0;
+	    padding-top: 37.5px;
+	    padding-bottom: 15px;
+	    a {
+	    	-webkit-font-smoothing: antialiased;
+	    	color: @rq-color-text-black-deep;
+	    	&:hover {
+	    		color: @rq-color-text-ash2;
+	    	}
+	    }
+	}
+	.rq-listing-meta {
+	    position: relative;
+	    margin-bottom: 20px;
+	    .v-line {
+		    padding: 0 10px;
+		}
+	}
+	.post-content, p {
+		font-size: 13px;
+		display: block;
+		color: @rq-color-text-ash5;
+		margin-bottom: 15px;
+	}
+}
+.rq-listing-standard-image-post {
+    position: relative;
+    img {
+	    width: 100%;
+	}
+}
+.rq-listing-standard-video-post {
+    position: relative;
+    .feature-image {
+	    position: relative;
+	    width: 100%;
+	    i {
+		    position: absolute;
+		    left: 45%;
+		    top: 45%;
+		    z-index: 30;
+		    height: 50px;
+		    width: 50px;
+		    background: @rq-color-white;
+		    color: @rq-color-text-black-deep;
+		    text-align: center;
+		    line-height: 52px;
+		    border-radius: 50%;
+		    font-size: 24px;
+		    padding-left: 5px;
+		    cursor: pointer;
+		}
+	    img {
+		    width: 100%;
+		}
+	}
+}
+.video-wrapper {
+    position: relative;
+    iframe {
+	    width: 100%;
+	}
+}
+.rq-pagination {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0 15px;
+	    .rq-pagination-list {
+	    position: relative;
+	    list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    li {
+		    display: inline-block;
+		    &.active {
+		    	a {
+				    color: @rq-color-text-black-deep;
+				    border-bottom: 1px solid @rq-color-text-black-deep;
+				}
+		    }
+		    a {
+			    padding: 6px;
+			    margin: 0 5px;
+			    border-bottom: 1px solid transparent;
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+.rq-dropcaps {
+  position: relative;
+
+  &.secondary {
+    &:first-letter {
+      background-color: @rq-bg-light;
+      color: @rq-text-color-light-dark;
+    }
+  }
+
+  &.primary {
+    &:first-letter {
+      background-color: @rq-primary-color;
+      color: @rq-text-color-white;
+    }
+  }
+
+  &.default {
+    &:first-child {
+      &:first-letter {
+        background-color: transparent;
+        color: @rq-text-color-dark;
+        font-size: 40px;
+        padding: 10px 0;
+      }
+    }
+  }
+  &.default-two {
+    &:first-child {
+
+      &:first-letter {
+        background-color: transparent;
+        color: @rq-primary-color;
+        font-size: 40px;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  &:first-child {
+     &:first-letter {
+      float: left;
+      font-size: 23px;
+      padding: 10px 17px;
+      margin: 3px 15px 0 0;
+      font-weight: bold;
+   }
+  }
+
+}
+

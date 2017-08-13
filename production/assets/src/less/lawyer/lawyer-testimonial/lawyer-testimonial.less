@@ -1,0 +1,90 @@
+.rq-testimonial-secondary {
+  position: relative;
+  background: @rq-lawyer-bg-light;
+  .owl-dots {
+    display: none !important;
+  }
+
+  .lawyer-testimonial .owl-prev, .lawyer-testimonial .owl-next {
+    display: inline-block;
+    font-family: "Ionicons";
+    font-size: 35px;
+    position: absolute;
+    bottom: 35px;
+    line-height: 1;
+    color: @rq-text-color-light-dark;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    .transition(.3s);
+    &:hover {
+      color: @rq-text-color-dark;
+    }
+  }
+  .lawyer-testimonial .owl-prev {
+    right: 90px;
+
+  }
+  .lawyer-testimonial .owl-next {
+    right: 50px;
+
+  }
+}
+
+.rq-testimonial-content-lawyer {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  @media(max-width:  @screen-sm) {
+    flex-direction: column;
+  }
+  &:before {
+    content: "\f347";
+    font-family: @ionicons-font-family;
+    position: absolute;
+    right: 60px;
+    font-size: 48px;
+    top: 60px;
+    color: @rq-text-color-light-dark;
+    transform: rotateY(180deg) rotateX(180deg);
+    opacity: .15;
+  }
+  .rq-left-part {
+    flex-basis: 30%;
+    @media(max-width:  @screen-sm) {
+      flex-basis: 100%;
+      height: 300px;
+    }
+  }
+  .rq-right-part {
+    position: relative;
+    padding: @rq-padding-base * 4 (@rq-padding-small * 8 + 5) @rq-padding-base * 4 @rq-padding-base * 4;
+    flex-basis: 70%;
+    @media(max-width:  @screen-sm) {
+      flex-basis: 100%;
+      padding: @rq-padding-base * 2 @rq-padding-base * 2 @rq-padding-base * 4;
+    }
+    .rq-client-text {
+      font-size: @rq-font-size-base + 10;
+      color: @rq-text-color-dark;
+      font-style: italic;
+      line-height: @rq-font-size-h2 - 4;
+      margin-bottom: @rq-margin-small * 6;
+      @media(max-width: @screen-sm) {
+        font-size: @rq-font-size-base + 4;
+      }
+    }
+    .rq-company-text {
+      margin-bottom: @rq-margin-small * 4;
+    }
+    .rq-client-address {
+      a {
+        color: @rq-text-color-dark;
+        font-family: @rq-font-family-primary;
+        font-weight: bold;
+      }
+    }
+
+  }
+}

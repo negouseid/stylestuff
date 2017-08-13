@@ -1,0 +1,28 @@
+// Listing information
+.rq-listing-information {
+  position: relative;
+  padding-bottom: @rq-padding-base * 2;
+
+}
+
+
+.rq-listing-reviews {
+  position: relative;
+  display: inline-block;
+  .rq-reviews {
+    list-style: none;
+    .no-padding-margin();
+    float: left;
+    margin-right: @rq-margin-base;
+    li {
+      display: inline-block;
+      i {
+        font-size: @rq-font-size-base + 2;
+      }
+    }
+  }
+  span {
+    font-size: @rq-font-size-base - 1;
+    font-family: @rq-font-family-primary;
+  }
+}

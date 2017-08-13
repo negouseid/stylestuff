@@ -1,0 +1,35 @@
+.rq-category-map-contains {
+  @media(min-width: @screen-md) {
+
+    display: inline-block;
+    float: left;
+    position: fixed;
+  }
+  position: relative;
+  .rq-contact-us-map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+  }
+}
+
+.show-result-btn {
+  position: absolute;
+  display: none;
+  top: @rq-margin-base - 4;
+  right: @rq-margin-base;
+  z-index: 40;
+  background: @rq-bg-body;
+  font-family: @rq-font-family-primary;
+  font-size: @rq-font-size-base - 2;
+  text-transform: capitalize;
+  color: @rq-text-color-dark;
+  padding: @rq-padding-small - 4 @rq-padding-small;
+  &:hover {
+    background: darken(@rq-bg-body, 10%);
+  }
+  @media(max-width: @screen-md) {
+    display: block;
+  }
+}

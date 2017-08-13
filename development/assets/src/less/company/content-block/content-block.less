@@ -1,0 +1,25 @@
+.rq-content-block {
+  .Relative(auto);
+  padding: @rq-padding-base * 5 0 @rq-padding-base * 4;
+  background: @rq-bg-body;
+  &.gray-bg {
+    background: @rq-bg-light;
+  }
+  &.no-bottom-padding {
+    padding-bottom: 0;
+  }
+  &.no-top-padding {
+    padding-top: 0;
+  }
+  &.with-bg-img {
+    .rq-block-overlay {
+      .absolute-overlay();
+      background-color: fade(@rq-testimonial-overlay-color, 80%);
+    }
+  }
+}
+
+::selection {
+  background-color: @rq-primary-color;
+  color: white;
+}

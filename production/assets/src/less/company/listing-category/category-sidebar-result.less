@@ -1,0 +1,93 @@
+// Category content block
+.rq-category-result-single {
+  position: relative;
+  padding: ( @rq-padding-base - 2 ) 0;
+  border-bottom: 1px solid @rq-listing-border-dark;
+  padding-left: @rq-padding-large * 6 + @rq-padding-base - 4;
+  padding-right: @rq-padding-base;
+  min-height: (@rq-padding-large * 4) + @rq-padding-base;
+  width: 100%;
+  @media(max-width: @screen-xs) {
+    padding-left: @rq-padding-large * 5 - 5;
+  }
+  .transition(.3s);
+  .rq-result-img {
+    position: absolute;
+    left: 15px;
+    width: 130px;
+    max-height: 90px;
+    overflow: hidden;
+    @media(max-width: @screen-xs) {
+      width: 100px;
+      left: 5px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .rq-result-text {
+    position: relative;
+    width: 100%;
+    h4 {
+      position: relative;
+      margin-top: 0;
+      margin-bottom: @rq-margin-small - 6;
+      font-family: @rq-font-family-secondary;
+      font-size: @rq-font-size-base;
+      line-height: @rq-font-size-base;
+      .text-uppercase;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: @rq-text-color-dark;
+      a {
+        color: @rq-text-color-dark;
+      }
+    }
+    .q-location-text,
+    .rq-address-text {
+      position: relative;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+
+  &:hover {
+    background: @rq-bg-body;
+  }
+
+  .rq-address-text {
+    color: @rq-text-color-dark;
+    font-size: @rq-font-size-base - 1;
+    font-family: @rq-font-family-primary;
+    color: @rq-text-color-dark;
+
+  }
+  .rq-location-text {
+    font-size: @rq-font-size-h6;
+    color: @rq-text-color-light-dark;
+    margin-bottom: @rq-margin-small;
+    i {
+      font-size: @rq-font-size-base;
+      color: @rq-text-color-light-dark;
+    }
+  }
+}
+
+.rq-center-text {
+  text-align: center;
+}
+.rq-category-load-more {
+  padding-top: @rq-padding-small * 2;
+  a {
+    color: @rq-text-color-dark;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

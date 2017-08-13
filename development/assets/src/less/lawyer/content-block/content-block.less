@@ -1,0 +1,40 @@
+.rq-content-block {
+  .Relative(auto);
+  padding: @rq-padding-base * 5 0 @rq-padding-base * 5;
+  background: @rq-bg-body;
+  &.gray-bg {
+    background: @rq-lawyer-bg-light;
+  }
+  &.no-bottom-padding {
+    padding-bottom: 0;
+  }
+  &.small-bottom-padding {
+    padding-bottom: @rq-padding-base;
+  }
+  &.no-top-padding {
+    padding-top: 0;
+  }
+  &.with-bg-img {
+    .rq-block-overlay {
+      .absolute-overlay();
+      background-color: fade(@rq-primary-color, 60%);
+    }
+  }
+  &.with-bg-color {
+    background: @rq-doctor-secondary-color;
+  }
+  &.gradient-bg {
+    background: linear-gradient(
+    to bottom,
+    @rq-lawyer-bg-light 0%,
+    @rq-lawyer-bg-light 62.6%,
+    @rq-bg-body 62.6%,
+    @rq-bg-body 100%
+    );
+  }
+}
+
+::selection {
+  background-color: @rq-primary-color;
+  color: white;
+}

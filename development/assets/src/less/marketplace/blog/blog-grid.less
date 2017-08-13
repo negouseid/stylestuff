@@ -1,0 +1,207 @@
+.blog-grid-wrapper {
+    position: relative;
+}
+.rq-blog-listing {
+	&.blog-grid-container {
+		.nav-tabs {
+		    text-align: left;
+		    @media @responsive480 {
+		    	text-align: center;	
+		    }
+		    li {
+		    	&:first-child {
+		    		a {
+		    			padding-left: 0;
+		    		}
+		    	}
+		    }
+		}
+	}
+} 
+.rq-blog-grid-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 135px;
+}
+.rq-blog-grid-single {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    .rq-overlay {
+	    -webkit-transition: 0.3s;
+	    -o-transition: 0.3s;
+	    transition: 0.3s;
+	    transition: all 0.3s ease;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    left: 0;
+	    top: 0;
+	    display: block;
+	    z-index: 9;
+	    background: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+	    background: -o-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+	    background: -moz-linear-gradient(top, transparent 50, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+	    background: linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+	}
+	&:hover .rq-overlay {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.company-name {
+	    font-family: "Montserrat-Regular";
+	    text-transform: uppercase;
+	    font-size: 18px;
+	    color: @rq-color-white;
+	    padding-bottom: 10px;
+	}
+	span {
+	    position: relative;
+	    z-index: 20;
+	}
+	.rq-listing-meta {
+	    position: relative;
+	    color: @rq-color-white;
+	    font-weight: 300;
+	    font-size: 13px;
+	    font-family: "Open Sans";
+	    .v-line {
+		    padding: 0 10px;
+		}
+	}
+}
+.rq-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-left: 62.5px;
+    padding-bottom: 50px;
+    @media @responsive991, @responsive767, @responsive480 {
+    	padding-left: 0;
+    }
+    &.sidebar {
+    	padding-bottom: 70px;
+    	&:before {
+    		content: '';
+    		position: absolute;
+    		height: 100%;
+    		width: 2px;
+    		background: @rq-date-color;
+    		left: 30px;
+    		@media @responsive991, @responsive767, @responsive480 {
+    			content: none;
+    		}
+    	}
+    }
+}
+.widget {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 45px;
+	    .widget-title {
+	    margin: 0;
+	    padding-bottom: 45px;
+	    text-transform: uppercase;
+	}
+	input {
+	    width: 100%;
+	    padding: 10px 15px;
+	    border: 0;
+	    outline: 0;
+	    background: @rq-color-text-ash4;
+	    color: @rq-color-text-black-deep;
+	    font-style: italic;
+    	-webkit-font-smoothing: antialiased;
+	}
+}
+.widget-title {
+    font-family: "Montserrat-Regular";
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+}
+.rq-recent-posts {
+    position: relative;
+    width: 100%;
+    height: auto;
+    .post-single {
+	    position: relative;
+	    padding-left: 90px;
+	    min-height: 75px;
+	    margin-bottom: 20px;
+	    img {
+		    position: absolute;
+		    left: 0;
+		    top: 5px;
+		    width: 70px;
+		}
+		a {
+		    text-transform: uppercase;
+		    color: @rq-color-text-black-deep;
+		}
+	}
+}
+.widget-categories {
+    position: relative;
+    ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	    li {
+		    padding: 5px 0 5px 20px;
+		    -webkit-font-smoothing: auto;
+		    &:before {
+			    content: "\45";
+			    font-family: 'ElegantIcons';
+			    position: absolute;
+			    left: 0;
+			    color: @rq-color-text-ash5;
+			}
+			 a {
+			    font-family: "Open Sans";
+			    color: @rq-color-text-ash5;
+			    span {
+				    float: right;
+				}
+			}
+		}
+	}
+}
+.twitter-widget {
+    position: relative;
+    .tweet-single {
+	    color: @rq-color-text-ash5;
+	    line-height: 30px;
+	    margin-bottom: 25px;
+	    span {
+		    display: block;
+		}
+		.tweet-link {
+		    color: @rq-twitter-color;
+		    font-family: "Open Sans";
+		}
+		.time {
+		    font-family: "Montserrat-Regular";
+		    text-transform: uppercase;
+		    color: @rq-date-color;
+		    font-size: 12px;
+		}
+	}
+}
+.tag-cloulds {
+    position: relative;
+	    a {
+	    position: relative;
+	    font-family: "Open Sans";
+	    padding-right: 5px;
+	}
+}

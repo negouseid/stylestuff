@@ -1,0 +1,77 @@
+.rq-tips-trick-wrapper {
+  position: relative;
+}
+
+.rq-tips-single {
+  position: relative;
+  display: flex;
+  @media(max-width:  @screen-sm) {
+    margin-bottom: @rq-margin-base;
+  }
+  @media(max-width: @screen-xs) {
+    flex-direction: column;
+  }
+  .rq-date-title {
+    font-size: 84px;
+    color: @rq-primary-color;
+    @media(max-width: @screen-xs) {
+      font-size: @rq-font-size-h2;
+      line-height: @rq-font-size-h2;
+    }
+    span {
+      font-family: @rq-font-family-secondary;
+      font-size: @rq-font-size-base;
+      color: @rq-text-color-dark;
+      display: block;
+      .text-uppercase;
+      padding-top: @rq-padding-base;
+      @media(max-width: @screen-xs) {
+        padding-top: 0;
+      }
+    }
+  }
+  .rq-tips-details {
+    position: relative;
+    padding-left: @rq-padding-base * 3;
+    padding-right: @rq-padding-base * 2;
+
+    @media(max-width: @screen-md) {
+      padding-left: @rq-margin-base + 10;
+      padding-right: @rq-padding-small;
+    }
+    @media(max-width: @screen-xs) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .tips-title {
+      font-size: @rq-font-size-base + 4;
+      color: @rq-text-color-dark;
+      .text-uppercase;
+      padding-top: @rq-padding-small;
+      padding-bottom: @rq-padding-small - 5;
+      display: block;
+      &:hover {
+        color: @rq-text-color-light-darker;
+      }
+    }
+    .meta {
+      font-size: @rq-font-size-base - 2;
+      color: @rq-text-color-light-dark;
+      position: relative;
+      margin-bottom: @rq-margin-base;
+      font-style: italic;
+      a {
+        font-family: @rq-font-family-primary;
+      }
+      .bar {
+        padding: 0 @rq-padding-small;
+      }
+    }
+    .content {
+      color: @rq-text-color-light-darker;
+      p {
+        color: @rq-text-color-light-darker;
+      }
+    }
+  }
+}

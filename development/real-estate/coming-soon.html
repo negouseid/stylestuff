@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Under constration</title>
+    <!-- Main style -->
+    <link rel="stylesheet" href="../assets/dist/css/real-estate.style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="rq-page-loading">
+      <div class="rq-loading-icon"><i class="ion-load-c"></i></div>
+
+    </div>
+    <div id="main-wrapper">
+      <div class="rq-comming-soon"
+        style="background: url('../assets/dist/img/real-estate/under-construction.jpg') top center no-repeat; background-size: cover;">
+        <div class="rq-overlay"></div>
+        <div class="comming-soon-content">
+          <a class="main-site-logo" href="index.html"><img src="../assets/dist/img/real-estate/company-logo.png" alt=""></a>
+          <h2>SORRY, WE ARE DOWN FOR MAINTENANCE</h2>
+          <p>We're currently under maintenance, if all goas as planned we'll be back in</p>
+          <div class="time-content">
+            <div id="countdowntimer"><span id="given_date"></span></div>
+            <ul class="timer-division">
+              <li>Days</li>
+              <li>Hours</li>
+              <li>Minutes</li>
+              <li>Seconds</li>
+            </ul>
+          </div>
+          <div class="rq-follow-us">
+            <h5>Follow us on social</h5>
+            <ul>
+              <li class="rq-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="rq-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="rq-pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+              <li class="rq-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li class="rq-dribble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div> <!-- end #main-wrapper -->
+
+    <script src="../assets/dist/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/fitvids.min.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/selectize.min.js"></script>
+    <script src="../assets/dist/js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/wow.min.js"></script>
+    <script src="../assets/dist/js/scripts.js" type="text/javascript"></script>
+    <script src="../assets/dist/js/jquery.countdownTimer.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#given_date").countdowntimer({
+          startDate : "2016/4/01 00:00:00",
+          dateAndTime : "2016/05/01 00:00:00",
+          size : "lg"
+        });
+      });
+    </script>
+  </body>
+</html>
